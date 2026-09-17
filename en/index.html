@@ -19,7 +19,7 @@
   <meta property="og:site_name" content="Photo Editorii Studio">
   <meta property="og:title" content="Photo Editorii | High-End Natural Retouching & Photomontage">
   <meta property="og:description" content="No artificial plastic AI skin. Manual retouching, 12-24h turnaround, and 100% satisfaction guarantee.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:image" content="https://ahmadpromax.github.io/photo-editorii/images/hero-after.jpg">
   <meta property="og:url" content="https://ahmadpromax.github.io/photo-editorii/en/">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -31,7 +31,7 @@
         "@type": "ProfessionalService",
         "@id": "https://ahmadpromax.github.io/photo-editorii/en/#studio",
         "name": "Photo Editorii Studio",
-        "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=80",
+        "image": "https://ahmadpromax.github.io/photo-editorii/images/hero-after.jpg",
         "description": "High-end photo editing studio specialized in frequency separation beauty retouching and cinematic photomontage.",
         "url": "https://ahmadpromax.github.io/photo-editorii/en/",
         "priceRange": "$3.5 - $7.5 USD",
@@ -117,7 +117,7 @@
 
 <body class="bg-brand-dark text-slate-200 font-sans antialiased selection:bg-brand-accent selection:text-brand-dark min-h-screen pb-20 md:pb-0">
 
-  <!-- 1. Header -->
+  <!-- 1. Header with all 5 navigation links -->
   <header class="sticky top-0 z-40 backdrop-blur-xl bg-brand-dark/80 border-b border-brand-border/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
@@ -131,6 +131,7 @@
         </div>
       </a>
 
+      <!-- 5 Main Navigation Items -->
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
         <a href="#portfolio" class="hover:text-brand-accent transition-colors">Portfolio</a>
         <a href="#features" class="hover:text-brand-accent transition-colors">Why Us</a>
@@ -183,12 +184,13 @@
           </div>
         </div>
 
+        <!-- Hero Slider (Local Images) -->
         <div class="lg:col-span-5">
           <div class="relative mx-auto max-w-md rounded-2xl p-2 bg-gradient-to-b from-brand-border to-brand-surface border border-brand-accent/30 shadow-2xl">
             <div class="ba-container rounded-xl aspect-[4/5]" data-slider="true">
-              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=40&sat=-30" alt="RAW portrait before" class="absolute inset-0 w-full h-full object-cover">
+              <img src="../images/hero-before.jpg" alt="RAW portrait before" class="absolute inset-0 w-full h-full object-cover">
               <div class="ba-overlay">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=85" alt="Retouched portrait after" class="absolute inset-0 w-full h-full object-cover">
+                <img src="../images/hero-after.jpg" alt="Retouched portrait after" class="absolute inset-0 w-full h-full object-cover">
               </div>
               <div class="ba-slider">
                 <div class="ba-handle">
@@ -230,7 +232,7 @@
     </div>
   </section>
 
-  <!-- 4. Portfolio (Clean showcase) -->
+  <!-- 4. Portfolio (Clean Showcase) -->
   <section id="portfolio" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center space-y-4 mb-12">
       <h2 class="text-brand-accent text-sm font-bold tracking-widest uppercase">Portfolio</h2>
@@ -247,17 +249,19 @@
         2. Beauty Retouch & Studio Portrait
       </button>
       <button class="portfolio-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all bg-brand-surface text-slate-300 border-brand-border hover:border-brand-accent/50" data-target="tab-enhance">
-        3. Enhancement & Quality Upscaling (Standard)
+        3. Enhancement & Quality (Standard)
       </button>
     </div>
 
     <div class="max-w-4xl mx-auto">
       
-      <!-- Sample 1: Photomontage -->
+      <!-- Sample 1 -->
       <div id="tab-montage" class="portfolio-panel bg-brand-surface rounded-2xl p-4 sm:p-6 border border-brand-border space-y-3">
         <div class="ba-container rounded-xl aspect-[16/10]" data-slider="true">
-          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1000&q=30&sat=-50" class="absolute inset-0 w-full h-full object-cover" alt="RAW montage">
-          <div class="ba-overlay"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1000&q=90" class="absolute inset-0 w-full h-full object-cover" alt="Final montage"></div>
+          <img src="../images/montage-before.jpg" alt="RAW montage" class="absolute inset-0 w-full h-full object-cover">
+          <div class="ba-overlay">
+            <img src="../images/montage-after.jpg" alt="Final montage" class="absolute inset-0 w-full h-full object-cover">
+          </div>
           <div class="ba-slider"><div class="ba-handle"><svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l-4 3 4 3m8-6l4 3-4 3"/></svg></div></div>
           <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-brand-accent text-[11px] font-bold text-brand-dark z-10 pointer-events-none">Retouched (After)</span>
           <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded bg-black/70 text-[11px] font-medium text-white border border-white/10 z-10 pointer-events-none">RAW (Before)</span>
@@ -268,11 +272,13 @@
         </div>
       </div>
 
-      <!-- Sample 2: Beauty Retouch -->
+      <!-- Sample 2 -->
       <div id="tab-beauty" class="portfolio-panel hidden bg-brand-surface rounded-2xl p-4 sm:p-6 border border-brand-border space-y-3">
         <div class="ba-container rounded-xl aspect-[16/10]" data-slider="true">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1000&q=35&sat=-20" class="absolute inset-0 w-full h-full object-cover" alt="RAW beauty">
-          <div class="ba-overlay"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1000&q=90" class="absolute inset-0 w-full h-full object-cover" alt="Retouched beauty"></div>
+          <img src="../images/beauty-before.jpg" alt="RAW beauty" class="absolute inset-0 w-full h-full object-cover">
+          <div class="ba-overlay">
+            <img src="../images/beauty-after.jpg" alt="Retouched beauty" class="absolute inset-0 w-full h-full object-cover">
+          </div>
           <div class="ba-slider"><div class="ba-handle"><svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l-4 3 4 3m8-6l4 3-4 3"/></svg></div></div>
           <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-brand-accent text-[11px] font-bold text-brand-dark z-10 pointer-events-none">Retouched (After)</span>
           <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded bg-black/70 text-[11px] font-medium text-white border border-white/10 z-10 pointer-events-none">RAW (Before)</span>
@@ -283,11 +289,13 @@
         </div>
       </div>
 
-      <!-- Sample 3: Enhancement -->
+      <!-- Sample 3 -->
       <div id="tab-enhance" class="portfolio-panel hidden bg-brand-surface rounded-2xl p-4 sm:p-6 border border-brand-border space-y-3">
         <div class="ba-container rounded-xl aspect-[16/10]" data-slider="true">
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1000&q=30&sat=-40" class="absolute inset-0 w-full h-full object-cover" alt="RAW portrait">
-          <div class="ba-overlay"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1000&q=90" class="absolute inset-0 w-full h-full object-cover" alt="Enhanced portrait"></div>
+          <img src="../images/enhance-before.jpg" alt="RAW portrait" class="absolute inset-0 w-full h-full object-cover">
+          <div class="ba-overlay">
+            <img src="../images/enhance-after.jpg" alt="Enhanced portrait" class="absolute inset-0 w-full h-full object-cover">
+          </div>
           <div class="ba-slider"><div class="ba-handle"><svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l-4 3 4 3m8-6l4 3-4 3"/></svg></div></div>
           <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-brand-accent text-[11px] font-bold text-brand-dark z-10 pointer-events-none">Retouched (After)</span>
           <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded bg-black/70 text-[11px] font-medium text-white border border-white/10 z-10 pointer-events-none">RAW (Before)</span>
@@ -338,7 +346,7 @@
     </div>
   </section>
 
-  <!-- 6. Transparent Pricing (با تمام جزئیات کاتالوگ زیر قیمت‌ها) -->
+  <!-- 6. Pricing (Exact Catalog Deliverables Under Each Price) -->
   <section id="pricing" class="py-20 bg-brand-surface/40 border-t border-brand-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center space-y-3 mb-16">
@@ -357,10 +365,11 @@
               <span class="text-xs text-slate-400">Starting from:</span>
               <div class="text-2xl font-black text-white mt-1">$3.5 <span class="text-xs font-normal text-slate-400">/ photo</span></div>
             </div>
+            <!-- Exact Catalog Deliverables -->
             <ul class="space-y-2.5 text-xs text-slate-300 pt-3 border-t border-brand-border/60">
-              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Sharpness recovery and de-blurring for vintage & low-res photos</li>
-              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Lighting adjustment & color harmony balancing</li>
-              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Removal of unwanted people and objects from frame</li>
+              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Sharpness recovery and de-blurring for low-resolution and vintage photos</li>
+              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Lighting adjustment, color harmony, and removal of unwanted people/objects from frame</li>
+              <li class="flex items-start gap-2 text-slate-400"><span class="text-brand-accent">✓</span> And more...</li>
             </ul>
           </div>
           <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" class="mt-6 w-full py-3 rounded-xl bg-brand-surface hover:bg-brand-border border border-brand-border text-center text-xs font-bold text-white transition-colors">Order via Telegram</a>
@@ -374,10 +383,11 @@
               <span class="text-xs text-slate-400">Starting from:</span>
               <div class="text-2xl font-black text-white mt-1">$6.5 <span class="text-xs font-normal text-slate-400">/ photo</span></div>
             </div>
+            <!-- Exact Catalog Deliverables -->
             <ul class="space-y-2.5 text-xs text-slate-300 pt-3 border-t border-brand-border/60">
-              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Professional skin & blemish cleansing with 100% natural texture preservation</li>
-              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Hair, nose, eyes & eyebrow reshaping</li>
-              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Editorial makeup styling & advanced manual Dodge & Burn</li>
+              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Professional blemish and skin cleansing with 100% natural texture preservation</li>
+              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Hair, nose, and eye contour correction & editorial makeup refinement</li>
+              <li class="flex items-start gap-2 text-slate-400"><span class="text-brand-accent">✓</span> And more...</li>
             </ul>
           </div>
           <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" class="mt-6 w-full py-3 rounded-xl bg-brand-surface hover:bg-brand-border border border-brand-border text-center text-xs font-bold text-white transition-colors">Order via Telegram</a>
@@ -392,11 +402,13 @@
               <span class="text-xs text-slate-400">Starting from:</span>
               <div class="text-2xl font-black text-brand-accent mt-1">$7.5 <span class="text-xs font-normal text-slate-300">/ photo</span></div>
             </div>
+            <!-- Exact Catalog Deliverables -->
             <ul class="space-y-2.5 text-xs text-slate-200 pt-3 border-t border-brand-border/60">
-              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Natural couple portraits crafted from separate solo photos</li>
-              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Complete scene replacement (airport, private jet, luxury decors, outfits...)</li>
-              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Cinematic face swap with angle, lighting & perspective matching</li>
-              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Hyper-detailed cinematic visual creation in 4K resolution</li>
+              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Natural couple photos created from individual solo pictures</li>
+              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Full scene & background replacement (airport, private jet, luxury café decors, outfits, etc.)</li>
+              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Cinematic face swap with precise angle, lighting, and perspective matching</li>
+              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Creation of unique cinematic visuals with the highest level of detail</li>
+              <li class="flex items-start gap-2 text-slate-400"><span class="text-brand-accent">✓</span> And more...</li>
             </ul>
           </div>
           <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" class="mt-6 w-full py-3 rounded-xl bg-gradient-to-r from-brand-accent to-yellow-500 text-center text-xs font-extrabold text-brand-dark transition-all">Choose VIP Package</a>
@@ -410,6 +422,7 @@
               <span class="text-xs text-slate-400">Pricing:</span>
               <div class="text-xl font-bold text-white mt-1">Custom Quote</div>
             </div>
+            <!-- Exact Catalog Deliverables -->
             <ul class="space-y-2.5 text-xs text-slate-300 pt-3 border-t border-brand-border/60">
               <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Exact typographical, paper grain & scanner noise matching</li>
               <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Zero digital traces or alterations visible</li>
