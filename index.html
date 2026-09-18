@@ -98,47 +98,21 @@
   }
   </script>
 
+  <!-- فونت وزیرمتن -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { sans: ['Vazirmatn', 'sans-serif'] },
-          colors: {
-            brand: {
-              dark: '#050c0e',
-              surface: '#091518',
-              card: '#0d1f23',
-              border: '#153238',
-              teal: '#0d9488',
-              accent: '#d4af37',
-              goldGlow: 'rgba(212, 175, 55, 0.15)',
-            }
-          }
-        }
-      }
-    }
-  </script>
-
-  <style>
-    .ba-container { position: relative; overflow: hidden; user-select: none; -webkit-user-select: none; }
-    .ba-overlay { position: absolute; inset: 0; width: 100%; height: 100%; clip-path: inset(0 50% 0 0); }
-    .ba-slider { position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; background-color: #d4af37; box-shadow: 0 0 14px rgba(212, 175, 55, 0.9); cursor: ew-resize; z-index: 20; }
-    .ba-handle { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 36px; height: 36px; border-radius: 50%; background: #091518; border: 2px solid #d4af37; box-shadow: 0 0 15px rgba(212, 175, 55, 0.6); display: flex; align-items: center; justify-content: center; }
-  </style>
+  <!-- استایل سبک و کامپایل‌شده پروداکشن (بدون نیاز به Tailwind CDN) -->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="bg-brand-dark text-slate-200 font-sans antialiased selection:bg-brand-accent selection:text-brand-dark min-h-screen pb-20 md:pb-0">
+<body class="bg-brand-dark text-slate-200 antialiased min-h-screen pb-20 md:pb-0" style="font-family: 'Vazirmatn', sans-serif;">
 
-  <!-- ۱. هدر کامل با چیدمان راست‌به‌چپ منو -->
+  <!-- ۱. هدر کامل با منوی راست‌به‌چپ -->
   <header class="sticky top-0 z-40 backdrop-blur-xl bg-brand-dark/80 border-b border-brand-border/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between" dir="ltr">
       
-      <!-- لوگو سمت چپ -->
       <a href="./" class="flex items-center gap-3 group">
         <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-border to-brand-card border border-brand-accent/40 flex items-center justify-center shadow-lg shadow-brand-goldGlow group-hover:border-brand-accent transition-colors">
           <span class="text-brand-accent font-black text-xl">P</span>
@@ -149,7 +123,7 @@
         </div>
       </a>
 
-      <!-- ۵ لینک اصلی منوی ناوبری (نمونه‌کارها | تمایز اجرایی | تعرفه‌ها | مراحل سفارش | سوالات متداول) -->
+      <!-- ۵ لینک اصلی ناوبری: نمونه‌کارها | تمایز اجرایی | تعرفه‌ها | مراحل سفارش | سوالات متداول -->
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300" dir="rtl">
         <a href="#portfolio" class="hover:text-brand-accent transition-colors">نمونه‌کارها</a>
         <a href="#features" class="hover:text-brand-accent transition-colors">تمایز اجرایی</a>
@@ -158,10 +132,9 @@
         <a href="#faq" class="hover:text-brand-accent transition-colors">سوالات متداول</a>
       </nav>
 
-      <!-- تغییر زبان و اکشن سریع سمت راست -->
       <div class="flex items-center gap-3">
         <a href="./en/" class="px-3 py-1.5 rounded-lg border border-brand-border text-xs font-semibold text-slate-300 hover:text-brand-accent hover:border-brand-accent transition-colors flex items-center gap-1.5">
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+          <svg class="w-3.5 h-3.5 fill-none stroke-current" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
           English
         </a>
 
@@ -173,7 +146,7 @@
     </div>
   </header>
 
-  <!-- ۲. سکشن هیرو با بهینه‌سازی سرعت LCP -->
+  <!-- ۲. سکشن هیرو با اولویت دانلود سریع LCP -->
   <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -204,7 +177,6 @@
           </div>
         </div>
 
-        <!-- اسلایدر هیرو با ابعاد دقیق و بارگذاری فوری -->
         <div class="lg:col-span-5" dir="ltr">
           <div class="relative mx-auto max-w-md rounded-2xl p-2 bg-gradient-to-b from-brand-border to-brand-surface border border-brand-accent/30 shadow-2xl">
             <div class="ba-container rounded-xl aspect-[4/5]" data-slider="true">
@@ -255,7 +227,7 @@
     </div>
   </section>
 
-  <!-- ۴. ویترین نمونه‌کارها (تمرکز بر ۳ اسلایدر) -->
+  <!-- ۴. ویترین نمونه‌کارها -->
   <section id="portfolio" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center space-y-4 mb-12">
       <h2 class="text-brand-accent text-sm font-bold tracking-widest uppercase">Portfolio</h2>
@@ -278,7 +250,7 @@
 
     <div class="max-w-4xl mx-auto">
       
-      <!-- نمونه ۱: فتومونتاژ و سوپر ادیت (VIP) -->
+      <!-- نمونه ۱: فتومونتاژ VIP -->
       <div id="tab-montage" class="portfolio-panel bg-brand-surface rounded-2xl p-4 sm:p-6 border border-brand-border space-y-3">
         <div class="ba-container rounded-xl aspect-[16/10]" data-slider="true" dir="ltr">
           <img src="./images/montage-before.jpg" width="1200" height="750" loading="lazy" alt="عکس خام قبل مونتاژ" class="absolute inset-0 w-full h-full object-cover">
@@ -295,7 +267,7 @@
         </div>
       </div>
 
-      <!-- نمونه ۲: بیوتی ریتاچ و پرتره آتلیه‌ای -->
+      <!-- نمونه ۲: بیوتی ریتاچ -->
       <div id="tab-beauty" class="portfolio-panel hidden bg-brand-surface rounded-2xl p-4 sm:p-6 border border-brand-border space-y-3">
         <div class="ba-container rounded-xl aspect-[16/10]" data-slider="true" dir="ltr">
           <img src="./images/beauty-before.jpg" width="1200" height="750" loading="lazy" alt="پرتره خام بیوتی" class="absolute inset-0 w-full h-full object-cover">
@@ -312,7 +284,7 @@
         </div>
       </div>
 
-      <!-- نمونه ۳: بهسازی و افزایش کیفیت (استاندارد) -->
+      <!-- نمونه ۳: بهسازی و افزایش کیفیت -->
       <div id="tab-enhance" class="portfolio-panel hidden bg-brand-surface rounded-2xl p-4 sm:p-6 border border-brand-border space-y-3">
         <div class="ba-container rounded-xl aspect-[16/10]" data-slider="true" dir="ltr">
           <img src="./images/enhance-before.jpg" width="1200" height="750" loading="lazy" alt="عکس خام قبل کیفیت" class="absolute inset-0 w-full h-full object-cover">
@@ -331,7 +303,7 @@
 
     </div>
 
-    <!-- دکمه هدایت به کانال تلگرام با متن ۶۰ نمونه‌کار -->
+    <!-- دکمه هدایت به کانال تلگرام -->
     <div class="mt-12 text-center">
       <a href="https://t.me/Photo_Editorii" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-accent hover:text-yellow-300 transition-colors">
         مشاهده بیش از 60 نمونه‌کار در کانال تلگرامی فتو ادیتوری
@@ -370,7 +342,7 @@
     </div>
   </section>
 
-  <!-- ۶. پرایس‌لیست و تعرفه‌ها (تعهدات کاتالوگ با تیک زیر قیمت) -->
+  <!-- ۶. پرایس‌لیست و تعرفه‌ها -->
   <section id="pricing" class="py-20 bg-brand-surface/40 border-t border-brand-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center space-y-3 mb-16">
@@ -381,7 +353,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         
-        <!-- کارت ۱: بهسازی و افزایش کیفیت (استاندارد) -->
+        <!-- کارت ۱: بهسازی کیفیت -->
         <div class="bg-brand-card rounded-2xl p-6 border border-brand-border flex flex-col justify-between text-right">
           <div class="space-y-4">
             <h3 class="text-lg font-bold text-white">۳. بهسازی و افزایش کیفیت (استاندارد)</h3>
@@ -398,7 +370,7 @@
           <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" class="mt-6 w-full py-3 rounded-xl bg-brand-surface hover:bg-brand-border border border-brand-border text-center text-xs font-bold text-white transition-colors">ثبت سفارش در تلگرام</a>
         </div>
 
-        <!-- کارت ۲: بیوتی ریتاچ و پرتره آتلیه‌ای -->
+        <!-- کارت ۲: بیوتی ریتاچ -->
         <div class="bg-brand-card rounded-2xl p-6 border border-brand-border flex flex-col justify-between text-right">
           <div class="space-y-4">
             <h3 class="text-lg font-bold text-white">۲. بیوتی ریتاچ و پرتره آتلیه‌ای</h3>
@@ -415,7 +387,7 @@
           <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" class="mt-6 w-full py-3 rounded-xl bg-brand-surface hover:bg-brand-border border border-brand-border text-center text-xs font-bold text-white transition-colors">ثبت سفارش در تلگرام</a>
         </div>
 
-        <!-- کارت ۳: فتومونتاژ و سوپر ادیت VIP -->
+        <!-- کارت ۳: فتومونتاژ VIP -->
         <div class="bg-gradient-to-b from-brand-card to-brand-surface rounded-2xl p-6 border-2 border-brand-accent relative flex flex-col justify-between shadow-xl text-right">
           <div class="absolute -top-3 right-6 bg-gradient-to-r from-brand-accent to-yellow-500 text-brand-dark font-extrabold text-[10px] px-3 py-1 rounded-full uppercase">سفارش ویژه VIP</div>
           <div class="space-y-4">
@@ -542,7 +514,7 @@
     </div>
   </section>
 
-  <!-- ۹. بلوک اختصاصی تعریف هویت برای درک و ارجاع موتورهای هوش مصنوعی (GEO & Semantic Entity) -->
+  <!-- ۹. بلوک تعریف هویت برای ارجاع هوش مصنوعی (GEO & Entity Definition) -->
   <section class="py-14 bg-brand-surface/40 border-t border-brand-border/60">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-right">
       <h2 class="text-base font-bold text-white mb-3">درباره استودیو تخصصی فتو ادیتوری (Photo Editorii)</h2>
