@@ -10,10 +10,15 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://ahmadpromax.github.io/photo-editorii/en/">
   
+  <!-- SVG Brand Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23091518'/><text x='50%' y='68%' font-size='60' font-weight='900' fill='%23d4af37' text-anchor='middle'>P</text></svg>">
+
+  <!-- International Hreflang Tags -->
   <link rel="alternate" hreflang="fa" href="https://ahmadpromax.github.io/photo-editorii/" />
   <link rel="alternate" hreflang="en" href="https://ahmadpromax.github.io/photo-editorii/en/" />
   <link rel="alternate" hreflang="x-default" href="https://ahmadpromax.github.io/photo-editorii/" />
 
+  <!-- Social Preview Meta Tags -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Photo Editorii Studio">
@@ -23,6 +28,7 @@
   <meta property="og:url" content="https://ahmadpromax.github.io/photo-editorii/en/">
   <meta name="twitter:card" content="summary_large_image">
 
+  <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -117,7 +123,7 @@
 
 <body class="bg-brand-dark text-slate-200 font-sans antialiased selection:bg-brand-accent selection:text-brand-dark min-h-screen pb-20 md:pb-0">
 
-  <!-- 1. Header with all 5 navigation links -->
+  <!-- 1. Header with 5 Links -->
   <header class="sticky top-0 z-40 backdrop-blur-xl bg-brand-dark/80 border-b border-brand-border/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
@@ -131,7 +137,6 @@
         </div>
       </a>
 
-      <!-- 5 Main Navigation Items -->
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
         <a href="#portfolio" class="hover:text-brand-accent transition-colors">Portfolio</a>
         <a href="#features" class="hover:text-brand-accent transition-colors">Why Us</a>
@@ -153,7 +158,7 @@
     </div>
   </header>
 
-  <!-- 2. Hero Section -->
+  <!-- 2. Hero Section with LCP Speed Boost -->
   <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -184,13 +189,13 @@
           </div>
         </div>
 
-        <!-- Hero Slider (Local Images) -->
+        <!-- Hero Slider (Drag right = Retouched | Drag left = RAW) -->
         <div class="lg:col-span-5">
           <div class="relative mx-auto max-w-md rounded-2xl p-2 bg-gradient-to-b from-brand-border to-brand-surface border border-brand-accent/30 shadow-2xl">
             <div class="ba-container rounded-xl aspect-[4/5]" data-slider="true">
-              <img src="../images/hero-before.jpg" alt="RAW portrait before" class="absolute inset-0 w-full h-full object-cover">
+              <img src="../images/hero-before.jpg" width="800" height="1000" fetchpriority="high" alt="RAW portrait before" class="absolute inset-0 w-full h-full object-cover">
               <div class="ba-overlay">
-                <img src="../images/hero-after.jpg" alt="Retouched portrait after" class="absolute inset-0 w-full h-full object-cover">
+                <img src="../images/hero-after.jpg" width="800" height="1000" fetchpriority="high" alt="Retouched portrait after" class="absolute inset-0 w-full h-full object-cover">
               </div>
               <div class="ba-slider">
                 <div class="ba-handle">
@@ -232,7 +237,7 @@
     </div>
   </section>
 
-  <!-- 4. Portfolio (Clean Showcase) -->
+  <!-- 4. Portfolio (Clean Slider Showcase) -->
   <section id="portfolio" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center space-y-4 mb-12">
       <h2 class="text-brand-accent text-sm font-bold tracking-widest uppercase">Portfolio</h2>
@@ -258,9 +263,9 @@
       <!-- Sample 1 -->
       <div id="tab-montage" class="portfolio-panel bg-brand-surface rounded-2xl p-4 sm:p-6 border border-brand-border space-y-3">
         <div class="ba-container rounded-xl aspect-[16/10]" data-slider="true">
-          <img src="../images/montage-before.jpg" alt="RAW montage" class="absolute inset-0 w-full h-full object-cover">
+          <img src="../images/montage-before.jpg" width="1200" height="750" loading="lazy" alt="RAW montage" class="absolute inset-0 w-full h-full object-cover">
           <div class="ba-overlay">
-            <img src="../images/montage-after.jpg" alt="Final montage" class="absolute inset-0 w-full h-full object-cover">
+            <img src="../images/montage-after.jpg" width="1200" height="750" loading="lazy" alt="Final montage" class="absolute inset-0 w-full h-full object-cover">
           </div>
           <div class="ba-slider"><div class="ba-handle"><svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l-4 3 4 3m8-6l4 3-4 3"/></svg></div></div>
           <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-brand-accent text-[11px] font-bold text-brand-dark z-10 pointer-events-none">Retouched (After)</span>
@@ -275,9 +280,9 @@
       <!-- Sample 2 -->
       <div id="tab-beauty" class="portfolio-panel hidden bg-brand-surface rounded-2xl p-4 sm:p-6 border border-brand-border space-y-3">
         <div class="ba-container rounded-xl aspect-[16/10]" data-slider="true">
-          <img src="../images/beauty-before.jpg" alt="RAW beauty" class="absolute inset-0 w-full h-full object-cover">
+          <img src="../images/beauty-before.jpg" width="1200" height="750" loading="lazy" alt="RAW beauty" class="absolute inset-0 w-full h-full object-cover">
           <div class="ba-overlay">
-            <img src="../images/beauty-after.jpg" alt="Retouched beauty" class="absolute inset-0 w-full h-full object-cover">
+            <img src="../images/beauty-after.jpg" width="1200" height="750" loading="lazy" alt="Retouched beauty" class="absolute inset-0 w-full h-full object-cover">
           </div>
           <div class="ba-slider"><div class="ba-handle"><svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l-4 3 4 3m8-6l4 3-4 3"/></svg></div></div>
           <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-brand-accent text-[11px] font-bold text-brand-dark z-10 pointer-events-none">Retouched (After)</span>
@@ -292,9 +297,9 @@
       <!-- Sample 3 -->
       <div id="tab-enhance" class="portfolio-panel hidden bg-brand-surface rounded-2xl p-4 sm:p-6 border border-brand-border space-y-3">
         <div class="ba-container rounded-xl aspect-[16/10]" data-slider="true">
-          <img src="../images/enhance-before.jpg" alt="RAW portrait" class="absolute inset-0 w-full h-full object-cover">
+          <img src="../images/enhance-before.jpg" width="1200" height="750" loading="lazy" alt="RAW portrait" class="absolute inset-0 w-full h-full object-cover">
           <div class="ba-overlay">
-            <img src="../images/enhance-after.jpg" alt="Enhanced portrait" class="absolute inset-0 w-full h-full object-cover">
+            <img src="../images/enhance-after.jpg" width="1200" height="750" loading="lazy" alt="Enhanced portrait" class="absolute inset-0 w-full h-full object-cover">
           </div>
           <div class="ba-slider"><div class="ba-handle"><svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l-4 3 4 3m8-6l4 3-4 3"/></svg></div></div>
           <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-brand-accent text-[11px] font-bold text-brand-dark z-10 pointer-events-none">Retouched (After)</span>
@@ -308,9 +313,10 @@
 
     </div>
 
+    <!-- CTA Button to Telegram (60+ samples) -->
     <div class="mt-12 text-center">
       <a href="https://t.me/Photo_Editorii" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-accent hover:text-yellow-300 transition-colors">
-        View 50+ Real Portfolio Samples in Photo Editorii Telegram Channel
+        View 60+ Real Portfolio Samples in Photo Editorii Telegram Channel
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
       </a>
     </div>
