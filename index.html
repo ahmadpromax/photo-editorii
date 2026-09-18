@@ -4,22 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- تایتل کامپکت و دقیق زیر ۶۵ کاراکتر منطبق بر کلمات کلیدی هدف -->
   <title>فتو ادیتوری | ادیت عکس، ریتاچ پرتره و فتومونتاژ با بافت طبیعی</title>
   <meta name="description" content="خدمات تخصصی ادیت عکس، بیوتی ریتاچ پرتره با تفکیک فرکانسی و فتومونتاژ سینمایی در فتو ادیتوری. تحویل ۱۲ تا ۲۴ ساعته و بررسی رایگان کیفیت عکس.">
   <meta name="keywords" content="ادیت عکس, ریتاچ پرتره, فتومونتاژ سینمایی, افزایش کیفیت عکس, فیس سواپ, اصلاح اسناد, فتو ادیتوری">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://ahmadpromax.github.io/photo-editorii/">
   
-  <!-- فاوآیکون SVG اختصاصی استودیو -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23091518'/><text x='50%' y='68%' font-size='60' font-weight='900' fill='%23d4af37' text-anchor='middle'>P</text></svg>">
 
-  <!-- پیوند زبان‌ها -->
   <link rel="alternate" hreflang="fa" href="https://ahmadpromax.github.io/photo-editorii/" />
   <link rel="alternate" hreflang="en" href="https://ahmadpromax.github.io/photo-editorii/en/" />
   <link rel="alternate" hreflang="x-default" href="https://ahmadpromax.github.io/photo-editorii/" />
 
-  <!-- متاتگ‌های Open Graph و Twitter Card اصلاح‌شده -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fa_IR">
   <meta property="og:site_name" content="فتو ادیتوری | Photo Editorii">
@@ -30,7 +26,6 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@Photo_Editorii">
 
-  <!-- اسکیما اصلاح‌شده بدون خطای کاراکتری (Valid JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -98,22 +93,48 @@
   }
   </script>
 
-  <!-- فونت بهینه‌شده بدون مسدودسازی رندر اولیه -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- استایل استاتیک پروداکشن -->
-  <link rel="stylesheet" href="./css/style.css">
+  <!-- بازگرداندن Tailwind استاندارد کامل جهت رفع ۱۰۰٪ باگ‌های ظاهری -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Vazirmatn', 'sans-serif'] },
+          colors: {
+            brand: {
+              dark: '#050c0e',
+              surface: '#091518',
+              card: '#0d1f23',
+              border: '#153238',
+              teal: '#0d9488',
+              accent: '#d4af37',
+              goldGlow: 'rgba(212, 175, 55, 0.15)',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .ba-container { position: relative; overflow: hidden; user-select: none; -webkit-user-select: none; }
+    .ba-overlay { position: absolute; inset: 0; width: 100%; height: 100%; clip-path: inset(0 50% 0 0); }
+    .ba-slider { position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; background-color: #d4af37; box-shadow: 0 0 14px rgba(212, 175, 55, 0.9); cursor: ew-resize; z-index: 20; }
+    .ba-handle { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 36px; height: 36px; border-radius: 50%; background: #091518; border: 2px solid #d4af37; box-shadow: 0 0 15px rgba(212, 175, 55, 0.6); display: flex; align-items: center; justify-content: center; }
+  </style>
 </head>
 
-<body class="bg-brand-dark text-slate-200 antialiased min-h-screen pb-16 md:pb-0" style="font-family: 'Vazirmatn', sans-serif;">
+<body class="bg-brand-dark text-slate-200 font-sans antialiased selection:bg-brand-accent selection:text-brand-dark min-h-screen pb-20 md:pb-0">
 
-  <!-- ۱. هدر با ساختار استاندارد سئو -->
+  <!-- ۱. هدر کامل و بازگشت قطعی تب‌ها -->
   <header class="sticky top-0 z-40 backdrop-blur-xl bg-brand-dark/80 border-b border-brand-border/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between" dir="ltr">
       
-      <!-- لوگو و نام برند -->
+      <!-- لوگو سمت چپ -->
       <a href="./" title="صفحه اصلی فتو ادیتوری" class="flex items-center gap-3 group">
         <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-border to-brand-card border border-brand-accent/40 flex items-center justify-center shadow-lg shadow-brand-goldGlow group-hover:border-brand-accent transition-colors">
           <span class="text-brand-accent font-black text-xl">P</span>
@@ -124,7 +145,7 @@
         </div>
       </a>
 
-      <!-- منوی ناوبری با انکرتکست‌های سئو شده -->
+      <!-- منوی ناوبری ۵ تایی دقیق راست به چپ -->
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300" dir="rtl">
         <a href="#portfolio" title="مشاهده نمونه کارهای ادیت عکس" class="hover:text-brand-accent transition-colors">نمونه‌کارها</a>
         <a href="#features" title="ویژگی‌های ریتاچ طبیعی عکس" class="hover:text-brand-accent transition-colors">تمایز اجرایی</a>
@@ -133,7 +154,7 @@
         <a href="#faq" title="سوالات متداول ادیت عکس" class="hover:text-brand-accent transition-colors">سوالات متداول</a>
       </nav>
 
-      <!-- دکمه‌ها و تغییر زبان -->
+      <!-- تغییر زبان و اکشن سریع سمت راست -->
       <div class="flex items-center gap-3">
         <a href="./en/" title="English Version" class="px-3 py-1.5 rounded-lg border border-brand-border text-xs font-semibold text-slate-300 hover:text-brand-accent hover:border-brand-accent transition-colors flex items-center gap-1.5">
           <svg class="w-3.5 h-3.5 fill-none stroke-current" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
@@ -148,48 +169,43 @@
     </div>
   </header>
 
-  <!-- ۲. هیرو سکشن بهینه‌شده برای موبایل و سئوی LCP -->
-  <section class="relative pt-8 pb-16 md:pt-20 md:pb-32 overflow-hidden">
+  <!-- ۲. سکشن هیرو استاندارد همراه دکمه‌های کامل -->
+  <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
-        <div class="lg:col-span-7 space-y-5 text-right">
+        <div class="lg:col-span-7 space-y-6 text-right">
           <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-surface border border-brand-border text-xs text-brand-accent shadow-inner">
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
             تحویل ۱۲ الی ۲۴ ساعته ✦ ریتاچ دستی با بافت طبیعی پوست
           </div>
 
-          <!-- هدینگ ۱ متمرکز بر کلمات کلیدی درآمدزا -->
-          <h1 class="text-2xl sm:text-4xl lg:text-5xl font-black text-white leading-tight">
+          <h1 class="text-3xl sm:text-5xl font-black text-white leading-tight">
             خدمات تخصصی ادیت عکس و
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent via-yellow-200 to-amber-400">ریتاچ حرفه‌ای پرتره</span>
             با حفظ کامل بافت پوست
           </h1>
 
-          <p class="text-sm sm:text-base text-slate-300 font-light leading-relaxed">
+          <p class="text-base sm:text-lg text-slate-300 font-light leading-relaxed">
             پایان عکس‌های تاریک، بی‌کیفیت و ادیت‌های پلاستیکی. استودیو <strong>فتو ادیتوری</strong> با تکنیک‌های تفکیک فرکانسی و داج اند برن، کیفیت آتلیه‌ای را به عکس‌های شما بازمی‌گرداند.
           </p>
 
-          <div class="pt-2 flex flex-col sm:flex-row items-center justify-start gap-3 sm:gap-4">
-            <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" title="شروع مشاوره و ارسال عکس در تلگرام" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-brand-accent to-yellow-500 text-brand-dark font-extrabold text-sm sm:text-base shadow-xl hover:scale-[1.02] transition-all">
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-start gap-4">
+            <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" title="ارسال عکس در تلگرام" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-brand-accent to-yellow-500 text-brand-dark font-extrabold text-base shadow-xl hover:scale-[1.02] transition-all">
               ارسال عکس برای بررسی رایگان
             </a>
-            <a href="#portfolio" title="دیدن نمونه کارهای ادیت عکس" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-brand-surface hover:bg-brand-card border border-brand-border text-slate-200 font-semibold text-sm sm:text-base transition-all">
+            <a href="#portfolio" title="مشاهده نمونه‌های ادیت عکس" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-brand-surface hover:bg-brand-card border border-brand-border text-slate-200 font-semibold text-base transition-all">
               مشاهده نمونه‌های قبل و بعد
             </a>
           </div>
         </div>
 
-        <!-- اسلایدر هیرو با اولویت بالای بارگذاری موبایل -->
-        <div class="lg:col-span-5 w-full max-w-sm sm:max-w-md mx-auto" dir="ltr">
-          <div class="relative rounded-2xl p-1.5 sm:p-2 bg-gradient-to-b from-brand-border to-brand-surface border border-brand-accent/30 shadow-2xl">
+        <div class="lg:col-span-5" dir="ltr">
+          <div class="relative mx-auto max-w-md rounded-2xl p-2 bg-gradient-to-b from-brand-border to-brand-surface border border-brand-accent/30 shadow-2xl">
             <div class="ba-container rounded-xl aspect-[4/5]" data-slider="true">
-              <!-- عکس خام زیرین با بارگذاری عادی -->
-              <img src="./images/hero-before.jpg" width="800" height="1000" loading="lazy" alt="عکس خام قبل از ادیت پرتره" title="پرتره خام قبل از ریتاچ" class="absolute inset-0 w-full h-full object-cover">
-              
-              <!-- عکس ادیت شده رویی با اولویت دانلود فوری -->
+              <img src="./images/hero-before.jpg" width="800" height="1000" loading="lazy" alt="تصویر خام پرتره قبل از ویرایش" class="absolute inset-0 w-full h-full object-cover">
               <div class="ba-overlay">
-                <img src="./images/hero-after.jpg" width="800" height="1000" fetchpriority="high" loading="eager" alt="عکس ریتاچ شده با بافت طبیعی فتو ادیتوری" title="پرتره ادیت شده با تفکیک فرکانسی" class="absolute inset-0 w-full h-full object-cover">
+                <img src="./images/hero-after.jpg" width="800" height="1000" fetchpriority="high" alt="پرتره ادیت شده با بافت طبیعی" class="absolute inset-0 w-full h-full object-cover">
               </div>
 
               <div class="ba-slider">
@@ -198,10 +214,10 @@
                 </div>
               </div>
 
-              <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-brand-accent text-[10px] sm:text-[11px] font-bold text-brand-dark z-10 pointer-events-none">ریتاچ شده (بعد)</span>
-              <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded bg-black/70 text-[10px] sm:text-[11px] font-semibold text-white border border-white/10 z-10 pointer-events-none">خام (قبل)</span>
+              <span class="absolute bottom-4 left-4 px-3 py-1 rounded-md bg-brand-accent text-[11px] font-bold text-brand-dark z-10 pointer-events-none">ریتاچ شده (بعد)</span>
+              <span class="absolute bottom-4 right-4 px-3 py-1 rounded-md bg-black/70 text-[11px] font-semibold text-white border border-white/10 z-10 pointer-events-none">خام (قبل)</span>
             </div>
-            <p class="text-center text-[11px] text-slate-400 mt-2" dir="rtl">نوار را بکشید تا نتیجه ادیت عکس را مقایسه کنید</p>
+            <p class="text-center text-xs text-slate-400 mt-3" dir="rtl">نوار را به سمت راست بکشید تا نتیجه ادیت شده را ببینید</p>
           </div>
         </div>
 
@@ -209,206 +225,207 @@
     </div>
   </section>
 
-  <!-- ۳. شاخص‌های اعتماد مشتری -->
-  <section class="border-y border-brand-border bg-brand-surface/70 py-6 sm:py-8">
+  <!-- ۳. نوار شاخص‌های اعتماد -->
+  <section class="border-y border-brand-border bg-brand-surface/70 py-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
         <div>
-          <div class="text-brand-accent font-black text-xl sm:text-3xl">۱۲ الی ۲۴ ساعت</div>
+          <div class="text-brand-accent font-black text-2xl sm:text-3xl">۱۲ الی ۲۴ ساعت</div>
           <div class="text-xs sm:text-sm text-slate-300 font-medium">تحویل سریع ادیت عکس</div>
         </div>
         <div>
-          <div class="text-brand-accent font-black text-xl sm:text-3xl">۱۰۰٪ طبیعی</div>
-          <div class="text-xs sm:text-sm text-slate-300 font-medium">حفظ منافذ و بافت پوست</div>
+          <div class="text-brand-accent font-black text-2xl sm:text-3xl">۱۰۰٪ طبیعی</div>
+          <div class="text-xs sm:text-sm text-slate-300 font-medium">حفظ بافت و منافذ پوست</div>
         </div>
         <div>
-          <div class="text-brand-accent font-black text-xl sm:text-3xl">تضمین رضایت</div>
-          <div class="text-xs sm:text-sm text-slate-300 font-medium">اصلاح مجدد تا رضایت کامل</div>
+          <div class="text-brand-accent font-black text-2xl sm:text-3xl">تضمین رضایت</div>
+          <div class="text-xs sm:text-sm text-slate-300 font-medium">اصلاح مجدد تا تایید کامل شما</div>
         </div>
         <div>
-          <div class="text-brand-accent font-black text-xl sm:text-3xl">رایگان</div>
-          <div class="text-xs sm:text-sm text-slate-300 font-medium">بررسی پتانسیل فایل عکس</div>
+          <div class="text-brand-accent font-black text-2xl sm:text-3xl">رایگان</div>
+          <div class="text-xs sm:text-sm text-slate-300 font-medium">امکان‌سنجی اولیه کیفیت تصویر</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ۴. ویترین نمونه‌کارها -->
-  <section id="portfolio" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center space-y-3 sm:space-y-4 mb-8 sm:mb-12">
-      <h2 class="text-brand-accent text-xs sm:text-sm font-bold tracking-widest uppercase">نمونه‌کارهای فتو ادیتوری</h2>
-      <p class="text-2xl sm:text-4xl font-black text-white">تفاوت کیفیت در ادیت حرفه‌ای عکس</p>
-      <p class="text-slate-400 text-xs sm:text-sm">برای دیدن وضوح نهایی، نوار وسط تصاویر را حرکت دهید.</p>
+  <!-- ۴. ویترین نمونه‌کارها با فواصل استاندارد -->
+  <section id="portfolio" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center space-y-4 mb-12">
+      <h2 class="text-brand-accent text-sm font-bold tracking-widest uppercase">نمونه‌کارهای فتو ادیتوری</h2>
+      <p class="text-3xl sm:text-4xl font-black text-white">تفاوت کیفیت در ادیت حرفه‌ای عکس</p>
+      <p class="text-slate-400 text-sm sm:text-base">نوار وسط را به سمت راست بکشید تا نسخه اصلاح‌شده نمایان شود.</p>
     </div>
 
-    <!-- ۳ تب خدمات ادیت عکس -->
-    <div class="flex flex-wrap items-center justify-center gap-2 mb-8 sm:mb-12">
-      <button class="portfolio-tab active px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all bg-brand-accent text-brand-dark border-brand-accent" data-target="tab-montage">
-        فتومونتاژ و سوپر ادیت عکس
+    <!-- ۳ تب موضوعی پرتفولیو -->
+    <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
+      <button class="portfolio-tab active px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all bg-brand-accent text-brand-dark border-brand-accent" data-target="tab-montage">
+        ۱. فتومونتاژ و سوپر ادیت عکس
       </button>
-      <button class="portfolio-tab px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all bg-brand-surface text-slate-300 border-brand-border hover:border-brand-accent/50" data-target="tab-beauty">
-        بیوتی ریتاچ پرتره آتلیه‌ای
+      <button class="portfolio-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all bg-brand-surface text-slate-300 border-brand-border hover:border-brand-accent/50" data-target="tab-beauty">
+        ۲. بیوتی ریتاچ پرتره آتلیه‌ای
       </button>
-      <button class="portfolio-tab px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all bg-brand-surface text-slate-300 border-brand-border hover:border-brand-accent/50" data-target="tab-enhance">
-        بهسازی و افزایش کیفیت عکس
+      <button class="portfolio-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all bg-brand-surface text-slate-300 border-brand-border hover:border-brand-accent/50" data-target="tab-enhance">
+        ۳. بهسازی و افزایش کیفیت عکس
       </button>
     </div>
 
     <div class="max-w-4xl mx-auto">
       
       <!-- نمونه ۱: فتومونتاژ -->
-      <div id="tab-montage" class="portfolio-panel bg-brand-surface rounded-2xl p-3 sm:p-6 border border-brand-border space-y-3">
+      <div id="tab-montage" class="portfolio-panel bg-brand-surface rounded-2xl p-4 sm:p-6 border border-brand-border space-y-3">
         <div class="ba-container rounded-xl aspect-[16/10]" data-slider="true" dir="ltr">
-          <img src="./images/montage-before.jpg" width="1200" height="750" loading="lazy" alt="عکس خام قبل از فتومونتاژ" title="تصویر قبل از فتومونتاژ" class="absolute inset-0 w-full h-full object-cover">
+          <img src="./images/montage-before.jpg" width="1200" height="750" loading="lazy" alt="عکس خام قبل مونتاژ" class="absolute inset-0 w-full h-full object-cover">
           <div class="ba-overlay">
-            <img src="./images/montage-after.jpg" width="1200" height="750" loading="lazy" alt="نتیجه فتومونتاژ سینمایی در استودیو فتو ادیتوری" title="فتومونتاژ اختصاصی و سینمایی" class="absolute inset-0 w-full h-full object-cover">
+            <img src="./images/montage-after.jpg" width="1200" height="750" loading="lazy" alt="فتومونتاژ سینمایی فتو ادیتوری" class="absolute inset-0 w-full h-full object-cover">
           </div>
           <div class="ba-slider"><div class="ba-handle"><svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l-4 3 4 3m8-6l4 3-4 3"/></svg></div></div>
-          <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded bg-brand-accent text-[10px] font-bold text-brand-dark z-10 pointer-events-none">ادیت شده (بعد)</span>
-          <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/70 text-[10px] font-medium text-white border border-white/10 z-10 pointer-events-none">خام (قبل)</span>
+          <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-brand-accent text-[11px] font-bold text-brand-dark z-10 pointer-events-none">ادیت شده (بعد)</span>
+          <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded bg-black/70 text-[11px] font-medium text-white border border-white/10 z-10 pointer-events-none">خام (قبل)</span>
         </div>
         <div class="flex items-center justify-between pt-1">
-          <h3 class="font-bold text-white text-sm sm:text-base">نمونه فتومونتاژ سینمایی و تغییر لوکیشن عکس</h3>
-          <span class="text-[11px] text-brand-accent bg-brand-card px-2.5 py-1 rounded-full border border-brand-border">خروجی 4K</span>
+          <h3 class="font-bold text-white text-base">نمونه فتومونتاژ سینمایی و تغییر لوکیشن عکس</h3>
+          <span class="text-xs text-brand-accent bg-brand-card px-2.5 py-1 rounded-full border border-brand-border">خروجی 4K</span>
         </div>
       </div>
 
       <!-- نمونه ۲: بیوتی ریتاچ -->
-      <div id="tab-beauty" class="portfolio-panel hidden bg-brand-surface rounded-2xl p-3 sm:p-6 border border-brand-border space-y-3">
+      <div id="tab-beauty" class="portfolio-panel hidden bg-brand-surface rounded-2xl p-4 sm:p-6 border border-brand-border space-y-3">
         <div class="ba-container rounded-xl aspect-[16/10]" data-slider="true" dir="ltr">
-          <img src="./images/beauty-before.jpg" width="1200" height="750" loading="lazy" alt="عکس چهره قبل از بیوتی ریتاچ" title="پرتره خام بیوتی" class="absolute inset-0 w-full h-full object-cover">
+          <img src="./images/beauty-before.jpg" width="1200" height="750" loading="lazy" alt="پرتره خام بیوتی" class="absolute inset-0 w-full h-full object-cover">
           <div class="ba-overlay">
-            <img src="./images/beauty-after.jpg" width="1200" height="750" loading="lazy" alt="بیوتی ریتاچ تخصصی با بافت طبیعی فتو ادیتوری" title="ریتاچ پرتره آتلیه‌ای" class="absolute inset-0 w-full h-full object-cover">
+            <img src="./images/beauty-after.jpg" width="1200" height="750" loading="lazy" alt="ریتاچ پرتره بیوتی فتو ادیتوری" class="absolute inset-0 w-full h-full object-cover">
           </div>
           <div class="ba-slider"><div class="ba-handle"><svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l-4 3 4 3m8-6l4 3-4 3"/></svg></div></div>
-          <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded bg-brand-accent text-[10px] font-bold text-brand-dark z-10 pointer-events-none">ادیت شده (بعد)</span>
-          <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/70 text-[10px] font-medium text-white border border-white/10 z-10 pointer-events-none">خام (قبل)</span>
+          <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-brand-accent text-[11px] font-bold text-brand-dark z-10 pointer-events-none">ادیت شده (بعد)</span>
+          <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded bg-black/70 text-[11px] font-medium text-white border border-white/10 z-10 pointer-events-none">خام (قبل)</span>
         </div>
         <div class="flex items-center justify-between pt-1">
-          <h3 class="font-bold text-white text-sm sm:text-base">نمونه بیوتی ریتاچ با تکنیک تفکیک فرکانسی پوست</h3>
-          <span class="text-[11px] text-brand-accent bg-brand-card px-2.5 py-1 rounded-full border border-brand-border">حفظ بافت طبیعی</span>
+          <h3 class="font-bold text-white text-base">نمونه بیوتی ریتاچ با تفکیک فرکانسی پوست</h3>
+          <span class="text-xs text-brand-accent bg-brand-card px-2.5 py-1 rounded-full border border-brand-border">بافت ۱۰۰٪ نچرال</span>
         </div>
       </div>
 
       <!-- نمونه ۳: بهسازی کیفیت -->
-      <div id="tab-enhance" class="portfolio-panel hidden bg-brand-surface rounded-2xl p-3 sm:p-6 border border-brand-border space-y-3">
+      <div id="tab-enhance" class="portfolio-panel hidden bg-brand-surface rounded-2xl p-4 sm:p-6 border border-brand-border space-y-3">
         <div class="ba-container rounded-xl aspect-[16/10]" data-slider="true" dir="ltr">
-          <img src="./images/enhance-before.jpg" width="1200" height="750" loading="lazy" alt="عکس تار قبل از بهسازی کیفیت" title="تصویر تار و بی‌کیفیت" class="absolute inset-0 w-full h-full object-cover">
+          <img src="./images/enhance-before.jpg" width="1200" height="750" loading="lazy" alt="عکس خام قبل کیفیت" class="absolute inset-0 w-full h-full object-cover">
           <div class="ba-overlay">
-            <img src="./images/enhance-after.jpg" width="1200" height="750" loading="lazy" alt="افزایش کیفیت و شفاف‌سازی عکس در فتو ادیتوری" title="بهسازی وضوح عکس" class="absolute inset-0 w-full h-full object-cover">
+            <img src="./images/enhance-after.jpg" width="1200" height="750" loading="lazy" alt="افزایش کیفیت عکس فتو ادیتوری" class="absolute inset-0 w-full h-full object-cover">
           </div>
           <div class="ba-slider"><div class="ba-handle"><svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l-4 3 4 3m8-6l4 3-4 3"/></svg></div></div>
-          <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded bg-brand-accent text-[10px] font-bold text-brand-dark z-10 pointer-events-none">ادیت شده (بعد)</span>
-          <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/70 text-[10px] font-medium text-white border border-white/10 z-10 pointer-events-none">خام (قبل)</span>
+          <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-brand-accent text-[11px] font-bold text-brand-dark z-10 pointer-events-none">ادیت شده (بعد)</span>
+          <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded bg-black/70 text-[11px] font-medium text-white border border-white/10 z-10 pointer-events-none">خام (قبل)</span>
         </div>
         <div class="flex items-center justify-between pt-1">
-          <h3 class="font-bold text-white text-sm sm:text-base">نمونه بازسازی نور، رنگ و رفع تاری عکس قدیمی</h3>
-          <span class="text-[11px] text-brand-accent bg-brand-card px-2.5 py-1 rounded-full border border-brand-border">ارتقای رزولوشن</span>
+          <h3 class="font-bold text-white text-base">نمونه بازسازی نور، رنگ و رفع تاری عکس</h3>
+          <span class="text-xs text-brand-accent bg-brand-card px-2.5 py-1 rounded-full border border-brand-border">ارتقای وضوح</span>
         </div>
       </div>
 
     </div>
 
-    <div class="mt-8 sm:mt-12 text-center">
-      <a href="https://t.me/Photo_Editorii" target="_blank" rel="noopener noreferrer" title="ورود به کانال تلگرام نمونه‌کارهای فتو ادیتوری" class="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-brand-accent hover:text-yellow-300 transition-colors">
-        مشاهده بیش از 60 نمونه‌کار ادیت عکس در کانال تلگرامی فتو ادیتوری
+    <!-- دکمه کانال تلگرام با فاصله مشخص -->
+    <div class="mt-14 text-center">
+      <a href="https://t.me/Photo_Editorii" target="_blank" rel="noopener noreferrer" title="مشاهده نمونه کارها در تلگرام" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-accent hover:text-yellow-300 transition-colors">
+        مشاهده بیش از 60 نمونه‌کار در کانال تلگرامی فتو ادیتوری
         <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
       </a>
     </div>
   </section>
 
-  <!-- ۵. تمایزهای اجرایی استودیو -->
-  <section id="features" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-border">
-    <div class="text-center space-y-3 sm:space-y-4 mb-12 sm:mb-16">
-      <h2 class="text-brand-accent text-xs sm:text-sm font-bold tracking-widest uppercase">مزایای فتو ادیتوری</h2>
-      <p class="text-2xl sm:text-4xl font-black text-white">تفاوت ادیت دستی آتلیه‌ای با فیلترهای آماده</p>
+  <!-- ۵. تمایزهای اجرایی (چیدمان ۴ ستونه منظم بدون اشغال بی‌دلیل صفحه) -->
+  <section id="features" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-border">
+    <div class="text-center space-y-4 mb-16">
+      <h2 class="text-brand-accent text-sm font-bold tracking-widest uppercase">مزایای فتو ادیتوری</h2>
+      <p class="text-3xl sm:text-4xl font-black text-white">تمایز کار دستی آتلیه‌ای با ابزارهای آماده</p>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="p-5 sm:p-6 rounded-2xl bg-brand-surface border border-brand-border space-y-2 text-right">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="p-6 rounded-2xl bg-brand-surface border border-brand-border space-y-3 text-right">
         <h3 class="font-bold text-white text-base">حفظ ۱۰۰٪ بافت طبیعی پوست</h3>
-        <p class="text-xs text-slate-400 leading-relaxed">پرهیز کامل از فیلترهای بلور که چهره را شبیه به عروسک مومی یا هوش مصنوعی می‌کنند.</p>
+        <p class="text-xs text-slate-400 leading-relaxed">عدم استفاده از فیلترهای بلور که چهره را شبیه به عروسک مومی یا افکت‌های بی‌کیفیت هوش مصنوعی می‌کنند.</p>
       </div>
 
-      <div class="p-5 sm:p-6 rounded-2xl bg-brand-surface border border-brand-border space-y-2 text-right">
+      <div class="p-6 rounded-2xl bg-brand-surface border border-brand-border space-y-3 text-right">
         <h3 class="font-bold text-white text-base">نورپردازی و پرسپکتیو سینمایی</h3>
-        <p class="text-xs text-slate-400 leading-relaxed">تطبیق علمی کلوین رنگ، زاویه تابش آفتاب و سایه‌های سه‌بعدی در فتومونتاژ عکس.</p>
+        <p class="text-xs text-slate-400 leading-relaxed">انطباق دقیق دمای رنگ، زاویه تابش نور و سایه‌های سه‌بعدی برای ترکیب طبیعی عناصر.</p>
       </div>
 
-      <div class="p-5 sm:p-6 rounded-2xl bg-brand-surface border border-brand-border space-y-2 text-right">
+      <div class="p-6 rounded-2xl bg-brand-surface border border-brand-border space-y-3 text-right">
         <h3 class="font-bold text-white text-base">حفظ حریم خصوصی و امنیت</h3>
-        <p class="text-xs text-slate-400 leading-relaxed">ادیت در محیطی ایزوله؛ تمامی فایل‌ها پس از تایید نهایی شما برای همیشه پاک می‌شوند.</p>
+        <p class="text-xs text-slate-400 leading-relaxed">تمام تصاویر شخصی و اسناد در محیطی ایزوله ادیت شده و پس از تایید نهایی برای همیشه پاک می‌شوند.</p>
       </div>
 
-      <div class="p-5 sm:p-6 rounded-2xl bg-brand-surface border border-brand-border space-y-2 text-right">
-        <h3 class="font-bold text-white text-base">بررسی صادقانه کیفیت</h3>
-        <p class="text-xs text-slate-400 leading-relaxed">اگر فایل پتانسیل خروجی عالی را نداشته باشد، شفاف پیش از پرداخت هزینه اعلام می‌کنیم.</p>
+      <div class="p-6 rounded-2xl bg-brand-surface border border-brand-border space-y-3 text-right">
+        <h3 class="font-bold text-white text-base">امکان‌سنجی بدون تعارف</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">اگر تصویر ارسالی شما پتانسیل خروجی درجه یک را نداشته باشد، صادقانه پیش از دریافت وجه به شما اعلام می‌کنیم.</p>
       </div>
     </div>
   </section>
 
-  <!-- ۶. پرایس‌لیست و تعرفه‌ها -->
-  <section id="pricing" class="py-16 sm:py-20 bg-brand-surface/40 border-t border-brand-border">
+  <!-- ۶. پرایس‌لیست همراه بج برجسته VIP -->
+  <section id="pricing" class="py-20 bg-brand-surface/40 border-t border-brand-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center space-y-2 sm:space-y-3 mb-12 sm:mb-16">
-        <h2 class="text-brand-accent text-xs sm:text-sm font-bold tracking-widest uppercase">هزینه و قیمت ادیت عکس</h2>
-        <p class="text-2xl sm:text-4xl font-black text-white">تعرفه شفاف خدمات فتو ادیتوری</p>
-        <p class="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto">تعهدات دقیق کیفیت در ازای هزینه پرداختی برای هر سفارش ادیت عکس.</p>
+      <div class="text-center space-y-3 mb-16">
+        <h2 class="text-brand-accent text-sm font-bold tracking-widest uppercase">هزینه و قیمت ادیت عکس</h2>
+        <p class="text-3xl sm:text-4xl font-black text-white">تعرفه شفاف خدمات فتو ادیتوری</p>
+        <p class="text-slate-400 text-sm max-w-xl mx-auto">تعهدات دقیق کیفیت در ازای هزینه پرداختی برای هر سفارش ادیت عکس.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         
-        <!-- کارت ۱: افزایش کیفیت عکس -->
+        <!-- کارت ۱: بهسازی کیفیت -->
         <div class="bg-brand-card rounded-2xl p-6 border border-brand-border flex flex-col justify-between text-right">
           <div class="space-y-4">
             <h3 class="text-lg font-bold text-white">بهسازی و افزایش کیفیت عکس</h3>
             <div>
-              <span class="text-xs text-slate-400">شروع هزینه از:</span>
+              <span class="text-xs text-slate-400">شروع تعرفه از:</span>
               <div class="text-2xl font-black text-white mt-1">۵۵۰,۰۰۰ <span class="text-xs font-normal text-slate-400">تومان</span></div>
             </div>
-            <ul class="space-y-2 text-xs text-slate-300 pt-3 border-t border-brand-border/60">
+            <ul class="space-y-2.5 text-xs text-slate-300 pt-3 border-t border-brand-border/60">
               <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> افزایش وضوح و رفع تاری عکس‌های بی‌کیفیت و قدیمی</li>
               <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> تنظیم نور، هارمونی رنگ و حذف افراد و اشیای اضافه از کادر</li>
-              <li class="flex items-start gap-2 text-slate-400"><span class="text-brand-accent">✓</span> بازسازی جزئیات مات‌شده تصویر</li>
+              <li class="flex items-start gap-2 text-slate-400"><span class="text-brand-accent">✓</span> و ....</li>
             </ul>
           </div>
-          <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" title="سفارش بهسازی کیفیت عکس در تلگرام" class="mt-6 w-full py-3 rounded-xl bg-brand-surface hover:bg-brand-border border border-brand-border text-center text-xs font-bold text-white transition-colors">ثبت سفارش ادیت عکس</a>
+          <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" title="ثبت سفارش افزایش کیفیت" class="mt-6 w-full py-3 rounded-xl bg-brand-surface hover:bg-brand-border border border-brand-border text-center text-xs font-bold text-white transition-colors">ثبت سفارش ادیت عکس</a>
         </div>
 
-        <!-- کارت ۲: بیوتی ریتاچ چهره -->
+        <!-- کارت ۲: بیوتی ریتاچ -->
         <div class="bg-brand-card rounded-2xl p-6 border border-brand-border flex flex-col justify-between text-right">
           <div class="space-y-4">
             <h3 class="text-lg font-bold text-white">بیوتی ریتاچ پرتره آتلیه‌ای</h3>
             <div>
-              <span class="text-xs text-slate-400">شروع هزینه از:</span>
+              <span class="text-xs text-slate-400">شروع تعرفه از:</span>
               <div class="text-2xl font-black text-white mt-1">۷۵۰,۰۰۰ <span class="text-xs font-normal text-slate-400">تومان</span></div>
             </div>
-            <ul class="space-y-2 text-xs text-slate-300 pt-3 border-t border-brand-border/60">
+            <ul class="space-y-2.5 text-xs text-slate-300 pt-3 border-t border-brand-border/60">
               <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> پاکسازی تخصصی لک و پوست با حفظ ۱۰۰٪ بافت طبیعی</li>
               <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> اصلاح فرم مو، بینی، چشم و میکاپ ژورنالی</li>
-              <li class="flex items-start gap-2 text-slate-400"><span class="text-brand-accent">✓</span> تکنیک پیشرفته داج اند برن دستی</li>
+              <li class="flex items-start gap-2 text-slate-400"><span class="text-brand-accent">✓</span> و ......</li>
             </ul>
           </div>
-          <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" title="سفارش ریتاچ پرتره در تلگرام" class="mt-6 w-full py-3 rounded-xl bg-brand-surface hover:bg-brand-border border border-brand-border text-center text-xs font-bold text-white transition-colors">ثبت سفارش ریتاچ پرتره</a>
+          <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" title="ثبت سفارش بیوتی ریتاچ" class="mt-6 w-full py-3 rounded-xl bg-brand-surface hover:bg-brand-border border border-brand-border text-center text-xs font-bold text-white transition-colors">ثبت سفارش ریتاچ پرتره</a>
         </div>
 
-        <!-- کارت ۳: فتومونتاژ سینمایی -->
+        <!-- کارت ۳: فتومونتاژ VIP (بج کاملاً واضح و اصلاح‌شده) -->
         <div class="bg-gradient-to-b from-brand-card to-brand-surface rounded-2xl p-6 border-2 border-brand-accent relative flex flex-col justify-between shadow-xl text-right">
-          <div class="absolute -top-3 right-6 bg-gradient-to-r from-brand-accent to-yellow-500 text-brand-dark font-extrabold text-[10px] px-3 py-1 rounded-full uppercase">سفارش ویژه</div>
+          <div class="absolute -top-3.5 right-6 bg-gradient-to-r from-brand-accent to-yellow-500 text-brand-dark font-extrabold text-[11px] px-3.5 py-1 rounded-full uppercase tracking-wider shadow-md">سفارش ویژه VIP</div>
           <div class="space-y-4">
             <h3 class="text-lg font-black text-white">فتومونتاژ و سوپر ادیت عکس</h3>
             <div>
-              <span class="text-xs text-slate-400">بازه هزینه:</span>
+              <span class="text-xs text-slate-400">بازه تعرفه:</span>
               <div class="text-2xl font-black text-brand-accent mt-1">۸۵۰ تا ۹۵۰ <span class="text-xs font-normal text-slate-300">هزار تومان</span></div>
             </div>
-            <ul class="space-y-2 text-xs text-slate-200 pt-3 border-t border-brand-border/60">
-              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> ساخت عکس دونفره طبیعی از عکس‌های تکی</li>
-              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> تغییر کامل فضا، لباس، پس‌زمینه و لوکیشن‌های لوکس</li>
-              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> فیس‌سواپ سینمایی با تنظیم زاویه و پرسپکتیو نور</li>
-              <li class="flex items-start gap-2 text-slate-300"><span class="text-brand-accent">✓</span> خروجی با بالاترین رزولوشن و جزئیات</li>
+            <ul class="space-y-2.5 text-xs text-slate-200 pt-3 border-t border-brand-border/60">
+              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> ساخت عکس‌های دونفره طبیعی از تصاویر تکی</li>
+              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> تغییر کامل فضا (فرودگاه، جت شخصی، کافه دکورهای لوکس...)</li>
+              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> فیس‌سواپ سینمایی با تنظیم دقیق زاویه، نور و پرسپکتیو</li>
+              <li class="flex items-start gap-2 text-slate-400"><span class="text-brand-accent">✓</span> و......</li>
             </ul>
           </div>
-          <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" title="سفارش فتومونتاژ و ادیت عکس در تلگرام" class="mt-6 w-full py-3 rounded-xl bg-gradient-to-r from-brand-accent to-yellow-500 text-center text-xs font-extrabold text-brand-dark transition-all">ثبت سفارش فتومونتاژ</a>
+          <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" title="ثبت سفارش فتومونتاژ" class="mt-6 w-full py-3 rounded-xl bg-gradient-to-r from-brand-accent to-yellow-500 text-center text-xs font-extrabold text-brand-dark transition-all">انتخاب پکیج VIP</a>
         </div>
 
         <!-- کارت ۴: اصلاح اسناد -->
@@ -419,117 +436,117 @@
               <span class="text-xs text-slate-400">تعرفه:</span>
               <div class="text-xl font-bold text-white mt-1">استعلام توافقی</div>
             </div>
-            <ul class="space-y-2 text-xs text-slate-300 pt-3 border-t border-brand-border/60">
-              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> تطابق کامل فونت، گرین و بافت برگه</li>
-              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> کاملاً محرمانه بدون کوچک‌ترین ردپای ادیت</li>
-              <li class="flex items-start gap-2 text-slate-400"><span class="text-brand-accent">✓</span> حذف دائمی فایل پس از تایید مشتری</li>
+            <ul class="space-y-2.5 text-xs text-slate-300 pt-3 border-t border-brand-border/60">
+              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> تطابق دقیق فونت، گرین و بافت کاغذ</li>
+              <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> کاملاً محرمانه، بدون کوچک‌ترین ردپا</li>
+              <li class="flex items-start gap-2 text-slate-400"><span class="text-brand-accent">✓</span> امحای دائمی فایل‌ها بلافاصله پس از تایید</li>
             </ul>
           </div>
-          <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" title="استعلام محرمانه اصلاح اسناد در تلگرام" class="mt-6 w-full py-3 rounded-xl bg-brand-surface hover:bg-brand-border border border-brand-border text-center text-xs font-bold text-white transition-colors">استعلام محرمانه اسناد</a>
+          <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" title="استعلام قیمت اسناد" class="mt-6 w-full py-3 rounded-xl bg-brand-surface hover:bg-brand-border border border-brand-border text-center text-xs font-bold text-white transition-colors">استعلام محرمانه اسناد</a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ۷. مراحل سفارش ادیت عکس -->
-  <section id="workflow" class="py-16 sm:py-20 bg-brand-surface/50 border-t border-brand-border">
+  <!-- ۷. مراحل سفارش -->
+  <section id="workflow" class="py-20 bg-brand-surface/50 border-t border-brand-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center space-y-3 sm:space-y-4 mb-12 sm:mb-16">
-        <h2 class="text-brand-accent text-xs sm:text-sm font-bold tracking-widest uppercase">روند ثبت پروژه</h2>
-        <p class="text-2xl sm:text-4xl font-black text-white">مراحل سفارش ادیت عکس در فتو ادیتوری</p>
+      <div class="text-center space-y-4 mb-16">
+        <h2 class="text-brand-accent text-sm font-bold tracking-widest uppercase">Order Workflow</h2>
+        <p class="text-3xl sm:text-4xl font-black text-white">ثبت سفارش ادیت عکس در ۴ گام ساده</p>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border space-y-2 text-right">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border space-y-3 text-right">
           <span class="text-3xl font-black text-brand-accent/30">۰۱</span>
-          <h3 class="font-bold text-white text-base">ارسال عکس در تلگرام</h3>
-          <p class="text-xs text-slate-400 leading-relaxed">تصویر مورد نظر را به شکل فایل برای پشتیبانی استودیو ارسال کنید.</p>
+          <h3 class="font-bold text-white text-base">ارسال تصویر در تلگرام</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">عکس مورد نظرتان را به صورت فایل در تلگرام به پشتیبانی استودیو ارسال می‌کنید.</p>
         </div>
 
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border space-y-2 text-right">
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border space-y-3 text-right">
           <span class="text-3xl font-black text-brand-accent/30">۰۲</span>
-          <h3 class="font-bold text-white text-base">بررسی اولیه رایگان</h3>
-          <p class="text-xs text-slate-400 leading-relaxed">پتانسیل ارتقای کیفیت، هزینه دقیق و زمان تحویل سریعاً اعلام می‌شود.</p>
+          <h3 class="font-bold text-white text-base">آنالیز و بررسی رایگان</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">کیفیت فایل، زمان دقیق تحویل و هزینه نهایی بدون معطلی به شما اعلام می‌شود.</p>
         </div>
 
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border space-y-2 text-right">
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border space-y-3 text-right">
           <span class="text-3xl font-black text-brand-accent/30">۰۳</span>
-          <h3 class="font-bold text-white text-base">ادیت تخصصی دستی</h3>
-          <p class="text-xs text-slate-400 leading-relaxed">عکس با تکنیک تفکیک فرکانسی و اصلاح پیشرفته وارد مراحل ادیت می‌شود.</p>
+          <h3 class="font-bold text-white text-base">ادیت تخصصی استودیویی</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">پروژه بر اساس استانداردهای تفکیک فرکانسی و اصلاح نور وارد فرایند اجرا می‌شود.</p>
         </div>
 
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border space-y-2 text-right">
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border space-y-3 text-right">
           <span class="text-3xl font-black text-brand-accent/30">۰۴</span>
-          <h3 class="font-bold text-white text-base">تایید و دریافت فایل 4K</h3>
-          <p class="text-xs text-slate-400 leading-relaxed">پیش‌نمایش را بررسی کرده و پس از رضایت ۱۰۰٪ فایل نهایی را تحویل می‌گیرید.</p>
+          <h3 class="font-bold text-white text-base">بازبینی و تحویل فایل 4K</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">پیش‌نمایش را بررسی می‌کنید؛ پس از رضایت ۱۰۰٪، فایل باکیفیت اصلی تحویل داده می‌شود.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ۸. سوالات متداول -->
-  <section id="faq" class="py-16 sm:py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-border">
-    <div class="text-center space-y-3 sm:space-y-4 mb-12 sm:mb-14">
-      <h2 class="text-brand-accent text-xs sm:text-sm font-bold tracking-widest uppercase">سوالات متداول</h2>
-      <p class="text-2xl sm:text-4xl font-black text-white">پاسخ به سوالات درباره خدمات ادیت عکس</p>
+  <section id="faq" class="py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-border">
+    <div class="text-center space-y-4 mb-14">
+      <h2 class="text-brand-accent text-sm font-bold tracking-widest uppercase">FAQ</h2>
+      <p class="text-3xl sm:text-4xl font-black text-white">پاسخ به سوالات درباره خدمات ادیت عکس</p>
     </div>
 
-    <div class="space-y-3 sm:space-y-4">
+    <div class="space-y-4">
       <div class="faq-item bg-brand-surface rounded-xl border border-brand-border overflow-hidden">
-        <button class="faq-toggle w-full p-4 sm:p-5 text-right font-bold text-white flex justify-between items-center hover:text-brand-accent">
-          <span>اگر بعد از تحویل کار از ادیت عکس راضی نبودم چه می‌شود؟</span>
+        <button class="faq-toggle w-full p-5 text-right font-bold text-white flex justify-between items-center hover:text-brand-accent">
+          <span>اگر بعد از تحویل اولیه از نتیجه راضی نبودم چه اتفاقی می‌افتد؟</span>
           <svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </button>
-        <div class="faq-content hidden p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-brand-border/40">
-          تمام پروژه‌های ادیت عکس در فتو ادیتوری شامل گارانتی اصلاح مجدد هستند و تا جلب رضایت کامل، تغییرات درخواستی شما به صورت رایگان اعمال می‌شود.
+        <div class="faq-content hidden p-5 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-brand-border/40">
+          تمام پروژه‌ها در فتو ادیتوری شامل گارانتی اصلاح مجدد هستند. شما تا جلب رضایت ۱۰۰٪ می‌توانید درخواست تغییرات یا بهینه‌سازی مدنظرتان را ثبت کنید تا دقیقاً به نتیجه دلخواه برسید.
         </div>
       </div>
 
       <div class="faq-item bg-brand-surface rounded-xl border border-brand-border overflow-hidden">
-        <button class="faq-toggle w-full p-4 sm:p-5 text-right font-bold text-white flex justify-between items-center hover:text-brand-accent">
-          <span>تکنیک تفکیک فرکانسی چه فرقی با فیلترهای آماده هوش مصنوعی دارد؟</span>
+        <button class="faq-toggle w-full p-5 text-right font-bold text-white flex justify-between items-center hover:text-brand-accent">
+          <span>تکنیک تفکیک فرکانسی دقیقاً چیست و چه فرقی با ابزارهای هوش مصنوعی دارد؟</span>
           <svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </button>
-        <div class="faq-content hidden p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-brand-border/40">
-          فیلترهای هوش مصنوعی تمام سطح پوست را بلور می‌کنند که منجر به ایجاد چهره پلاستیکی می‌شود؛ در حالی که تفکیک فرکانسی لایه رنگ و بافت را مجزا ویرایش کرده و منافذ طبیعی پوست را کاملاً حفظ می‌کند.
+        <div class="faq-content hidden p-5 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-brand-border/40">
+          ابزارهای هوش مصنوعی عکس را به شکل کلی بلور و هموار می‌کنند که باعث از دست رفتن هویت و ریزبافت‌های چهره می‌شود. در روش تفکیک فرکانسی (Frequency Separation)، لایه رنگ و لایه بافت پوست به شکل جداگانه آنالیز و ویرایش می‌شوند؛ لکه‌ها بدون نابود شدن منافذ طبیعی پوست برطرف می‌گردند.
         </div>
       </div>
 
       <div class="faq-item bg-brand-surface rounded-xl border border-brand-border overflow-hidden">
-        <button class="faq-toggle w-full p-4 sm:p-5 text-right font-bold text-white flex justify-between items-center hover:text-brand-accent">
-          <span>آیا امکان تحویل فوری زیر ۱۲ ساعت برای سفارش‌های اضطراری هست؟</span>
+        <button class="faq-toggle w-full p-5 text-right font-bold text-white flex justify-between items-center hover:text-brand-accent">
+          <span>آیا امکان تحویل فوری زیر ۱۲ ساعت برای کارهای اضطراری وجود دارد؟</span>
           <svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </button>
-        <div class="faq-content hidden p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-brand-border/40">
-          بله؛ در صورت نیاز به تحویل فوری ادیت عکس، در پیام اولیه در تلگرام مطرح فرمایید تا پروژه در اولویت اکسپرس کمتر از ۶ تا ۸ ساعت تحویل گردد.
+        <div class="faq-content hidden p-5 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-brand-border/40">
+          بله؛ در صورتی که زمان فوری مدنظر دارید، در پیام اولیه در تلگرام عنوان کنید تا با بررسی ترافیک استودیو، در اولویت تحویل اکسپرس (کمتر از ۶ تا ۸ ساعت) قرار گیرد.
         </div>
       </div>
 
       <div class="faq-item bg-brand-surface rounded-xl border border-brand-border overflow-hidden">
-        <button class="faq-toggle w-full p-4 sm:p-5 text-right font-bold text-white flex justify-between items-center hover:text-brand-accent">
-          <span>آیا عکس‌های ارسالی بعد از ادیت در جایی ذخیره یا منتشر می‌شوند؟</span>
+        <button class="faq-toggle w-full p-5 text-right font-bold text-white flex justify-between items-center hover:text-brand-accent">
+          <span>آیا اسناد و عکس‌های شخصی بعد از ادیت در جایی ذخیره یا منتشر می‌شوند؟</span>
           <svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </button>
-        <div class="faq-content hidden p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-brand-border/40">
-          خیر، انتشار هرگونه نمونه‌کار تنها با اجازه کتبی شما ممکن است. همچنین کلیه فایل‌ها ۷۲ ساعت پس از تایید ادیت، به طور خودکار پاک می‌شوند.
+        <div class="faq-content hidden p-5 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-brand-border/40">
+          خیر، به هیچ وجه. انتشار هرگونه نمونه‌کار پرتره تنها در صورت کسب اجازه کتبی شما انجام می‌پذیرد. همچنین اطلاعات و فایل‌های اسناد کاملاً محرمانه تلقی شده و ۷۲ ساعت پس از تحویل نهایی برای همیشه از سیستم پاک می‌شوند.
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ۹. بلوک شناسایی هویت برای موتورهای هوش مصنوعی و سئوی معنایی -->
-  <section class="py-10 sm:py-14 bg-brand-surface/40 border-t border-brand-border/60">
+  <!-- ۹. بلوک تعریف هویت هوش مصنوعی (طراحی تمیز با فاصله متناسب و بدون کادر بدقواره) -->
+  <section class="py-16 bg-brand-surface/30 border-t border-brand-border">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-right">
-      <h2 class="text-sm sm:text-base font-bold text-white mb-2 sm:mb-3">درباره استودیو تخصصی ادیت عکس فتو ادیتوری</h2>
-      <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+      <h2 class="text-base font-bold text-brand-accent mb-3">درباره استودیو ادیت عکس فتو ادیتوری</h2>
+      <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
         استودیو <strong>فتو ادیتوری (Photo Editorii)</strong> یک مرجع مستقل برای خدمات حرفه‌ای <em>ادیت عکس</em>، <em>بیوتی ریتاچ پرتره</em>، <em>فتومونتاژ سینمایی</em> و <em>اصلاح دیجیتال اسناد</em> است. تمایز کلیدی فتو ادیتوری با نرم‌افزارهای خودکار، اجرای دقیق تکنیک‌های دستی تفکیک فرکانسی و داج اند برن جهت حفظ ۱۰۰٪ بافت، منافذ و هویت طبیعی پوست است. تمامی سفارش‌های ادیت عکس همراه با امکان‌سنجی اولیه رایگان، تحویل اکسپرس ۱۲ تا ۲۴ ساعته و ضمانت رضایت ۱۰۰ درصدی در پیام‌رسان تلگرام ثبت می‌شوند.
       </p>
     </div>
   </section>
 
-  <!-- ۱۰. فوتر استودیو با انکرتکست‌های پاکسازی‌شده -->
-  <footer class="border-t border-brand-border bg-brand-dark py-10 sm:py-12">
+  <!-- ۱۰. فوتر استودیو با چیدمان استاندارد -->
+  <footer class="border-t border-brand-border bg-brand-dark py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8" dir="ltr">
         
@@ -539,33 +556,32 @@
             <span class="font-extrabold text-white text-lg">فتو ادیتوری | Photo Editorii</span>
           </div>
           <p class="text-xs text-slate-400 leading-relaxed max-w-sm" dir="rtl">
-            استودیوی تخصصی ویرایش و ریتاچ عکس، فتومونتاژ سینمایی و اصلاح اسناد با حفظ کیفیت و بافت طبیعی.
+            استودیوی تخصصی ویرایش و ریتاچ حرفه‌ای عکس، فتومونتاژ سینمایی و اصلاح اسناد دیجیتال با حفظ اصالت بافت.
           </p>
         </div>
 
         <div class="space-y-2 text-left">
           <h4 class="text-sm font-bold text-white">راه‌های ارتباطی تلگرام</h4>
           <ul class="text-xs space-y-1 text-slate-400">
-            <li>کانال نمونه‌کارها: <a href="https://t.me/Photo_Editorii" target="_blank" rel="noopener noreferrer" title="کانال تلگرام فتو ادیتوری" class="text-brand-accent">فتو ادیتوری در تلگرام</a></li>
-            <li>ثبت سفارش ادیت: <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" title="پشتیبانی سفارشات ادیت عکس" class="text-brand-accent">ارسال فایل به پشتیبانی</a></li>
-            <li>مدیریت استودیو: <a href="https://t.me/ahmo_ba_to" target="_blank" rel="noopener noreferrer" title="ارتباط مستقیم با مدیریت استودیو" class="text-brand-accent">ارتباط مستقیم مدیریت</a></li>
+            <li>کانال اصلی: <a href="https://t.me/Photo_Editorii" target="_blank" rel="noopener noreferrer" title="کانال نمونه کارها" class="text-brand-accent">فتو ادیتوری در تلگرام</a></li>
+            <li>ثبت سفارش ادیت: <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" title="پشتیبانی تلگرام" class="text-brand-accent">پشتیبانی سفارشات</a></li>
+            <li>مدیریت استودیو: <a href="https://t.me/ahmo_ba_to" target="_blank" rel="noopener noreferrer" title="مدیریت استودیو" class="text-brand-accent">ارتباط با مدیریت</a></li>
           </ul>
         </div>
 
         <div class="space-y-2 text-left">
-          <h4 class="text-sm font-bold text-white">تعهد کیفیت</h4>
-          <p class="text-xs text-slate-400 leading-relaxed">تحویل ۱۲ الی ۲۴ ساعته سفارش‌های ادیت عکس تکی با گارانتی اصلاح مجدد.</p>
+          <h4 class="text-sm font-bold text-white">تعهد کاری</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">تحویل ۱۲ الی ۲۴ ساعته پروژه‌های تکی با پشتیبانی مستقیم در تلگرام.</p>
         </div>
 
       </div>
 
-      <div class="pt-6 sm:pt-8 border-t border-brand-border/60 text-center text-xs text-slate-500">
-        © کلیه حقوق برای استودیو ادیت عکس فتو ادیتوری محفوظ است.
+      <div class="pt-8 border-t border-brand-border/60 text-center text-xs text-slate-500">
+        © تمامی حقوق برای استودیو «فتو ادیتوری» محفوظ است.
       </div>
     </div>
   </footer>
 
-  <!-- اسکریپت سبک اسلایدر و تب‌ها -->
   <script>
     function setupSliders() {
       const containers = document.querySelectorAll('.ba-container');
