@@ -3,19 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" as="image" href="../images/hero-after.jpg" type="image/jpeg" fetchpriority="high">
+  
+  <!-- SEO Standard Title Under 65 Characters -->
   <title>Photo Editorii | High-End Photo Retouching & Photomontage Studio</title>
   <meta name="description" content="Expert photo retouching, natural skin frequency separation, and cinematic photomontage studio. 12-24h delivery with zero artificial plastic AI smoothing.">
   <meta name="keywords" content="photo retouching, portrait retouch, frequency separation, cinematic photomontage, photo enhancement, face swap, photo editorii">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://ahmadpromax.github.io/photo-editorii/en/">
   
+  <!-- 1. Preconnect to Font Servers to Eliminate Network Latency -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- 2. High-Priority Preload for LCP Hero Image (Relative Path to Parent Directory) -->
+  <link rel="preload" as="image" href="../images/hero-after.jpg" type="image/jpeg" fetchpriority="high">
+
+  <!-- Brand SVG Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23091518'/><text x='50%' y='68%' font-size='60' font-weight='900' fill='%23d4af37' text-anchor='middle'>P</text></svg>">
 
+  <!-- International Hreflang Tags -->
   <link rel="alternate" hreflang="fa" href="https://ahmadpromax.github.io/photo-editorii/" />
   <link rel="alternate" hreflang="en" href="https://ahmadpromax.github.io/photo-editorii/en/" />
   <link rel="alternate" hreflang="x-default" href="https://ahmadpromax.github.io/photo-editorii/" />
 
+  <!-- Social Previews & Twitter Cards -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Photo Editorii Studio">
@@ -26,6 +37,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@Photo_Editorii">
 
+  <!-- Clean Valid JSON-LD Schema (GEO & Knowledge Graph Ready) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -94,10 +106,10 @@
   }
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Non-blocking Google Font with display=swap -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+  <!-- Core Tailwind Engine for 100% Consistent Responsive Layout -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -130,7 +142,7 @@
 
 <body class="bg-brand-dark text-slate-200 font-sans antialiased selection:bg-brand-accent selection:text-brand-dark min-h-screen pb-20 md:pb-0">
 
-  <!-- 1. Header with 5 Links -->
+  <!-- 1. Header with Full Navigation -->
   <header class="sticky top-0 z-40 backdrop-blur-xl bg-brand-dark/80 border-b border-brand-border/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
@@ -166,7 +178,7 @@
     </div>
   </header>
 
-  <!-- 2. Hero Section -->
+  <!-- 2. Hero Section Optimized for LCP & SEO H1 -->
   <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -177,6 +189,7 @@
             12–24h Turnaround ✦ 100% Real Skin Texture
           </div>
 
+          <!-- SEO Optimized H1 Tag: Exactly 48 Characters -->
           <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight">
             High-End
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent via-yellow-200 to-amber-400">Photo Retouching & Portrait</span>
@@ -202,7 +215,7 @@
             <div class="ba-container rounded-xl aspect-[4/5]" data-slider="true">
               <img src="../images/hero-before.jpg" width="800" height="1000" loading="lazy" alt="RAW portrait before photo retouching" class="absolute inset-0 w-full h-full object-cover">
               <div class="ba-overlay">
-                <img src="../images/hero-after.jpg" width="800" height="1000" fetchpriority="high" alt="Retouched portrait after photo retouching" class="absolute inset-0 w-full h-full object-cover">
+                <img src="../images/hero-after.jpg" width="800" height="1000" fetchpriority="high" loading="eager" alt="Retouched portrait after photo retouching" class="absolute inset-0 w-full h-full object-cover">
               </div>
               <div class="ba-slider">
                 <div class="ba-handle">
@@ -255,13 +268,13 @@
     <!-- 3 Category Tabs -->
     <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
       <button class="portfolio-tab active px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all bg-brand-accent text-brand-dark border-brand-accent" data-target="tab-montage">
-        Cinematic Photomontage
+        1. Cinematic Photomontage
       </button>
       <button class="portfolio-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all bg-brand-surface text-slate-300 border-brand-border hover:border-brand-accent/50" data-target="tab-beauty">
-        Beauty Portrait Retouching
+        2. Beauty Portrait Retouching
       </button>
       <button class="portfolio-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all bg-brand-surface text-slate-300 border-brand-border hover:border-brand-accent/50" data-target="tab-enhance">
-        Quality Photo Enhancement
+        3. Quality Photo Enhancement
       </button>
     </div>
 
