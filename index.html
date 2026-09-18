@@ -3,29 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="N-YLTYym71mWRUB9lEUgnNLAk3qHM06jYt64GoMakqs" />
-  <title>فتو ادیتوری | ادیت عکس، ریتاچ پرتره و فتومونتاژ با بافت طبیعی</title>
-  <meta name="description" content="خدمات تخصصی ادیت عکس، بیوتی ریتاچ پرتره با تفکیک فرکانسی و فتومونتاژ سینمایی در فتو ادیتوری. تحویل ۱۲ تا ۲۴ ساعته و بررسی رایگان کیفیت عکس.">
+  
+  <!-- تایتل استاندارد سئو با کلیدواژه‌های اصلی -->
+  <title>فتو ادیتوری | خدمات تخصصی ادیت عکس، ریتاچ پرتره و فتومونتاژ</title>
+  <meta name="description" content="خدمات حرفه‌ای ادیت عکس، بیوتی ریتاچ پرتره با تفکیک فرکانسی و فتومونتاژ سینمایی در فتو ادیتوری. تحویل سریع ۱۲ تا ۲۴ ساعته با حفظ ۱۰۰٪ بافت طبیعی پوست.">
   <meta name="keywords" content="ادیت عکس, ریتاچ پرتره, فتومونتاژ سینمایی, افزایش کیفیت عکس, فیس سواپ, اصلاح اسناد, فتو ادیتوری">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://ahmadpromax.github.io/photo-editorii/">
   
+  <!-- ۱. اتصال پیش‌دستانه به سرور فونت و تصاویر جهت کاهش تأخیر موبایل -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- ۲. بارگذاری فوق‌سریع تصویر هیرو (رفع مستقیم افت LCP در موبایل بدون تغییر سایز) -->
+  <link rel="preload" as="image" href="./images/hero-after.jpg" type="image/jpeg" fetchpriority="high">
+
+  <!-- فاوآیکون SVG اختصاصی برند -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23091518'/><text x='50%' y='68%' font-size='60' font-weight='900' fill='%23d4af37' text-anchor='middle'>P</text></svg>">
 
+  <!-- پیوند زبان‌های سایت -->
   <link rel="alternate" hreflang="fa" href="https://ahmadpromax.github.io/photo-editorii/" />
   <link rel="alternate" hreflang="en" href="https://ahmadpromax.github.io/photo-editorii/en/" />
   <link rel="alternate" hreflang="x-default" href="https://ahmadpromax.github.io/photo-editorii/" />
 
+  <!-- متاتگ‌های پیش‌نمایش شبکه‌های اجتماعی -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fa_IR">
   <meta property="og:site_name" content="فتو ادیتوری | Photo Editorii">
-  <meta property="og:title" content="فتو ادیتوری | ادیت عکس، ریتاچ پرتره و فتومونتاژ">
-  <meta property="og:description" content="مرجع تخصصی ادیت عکس و ریتاچ پرتره با حفظ ۱۰۰٪ بافت طبیعی پوست.">
+  <meta property="og:title" content="فتو ادیتوری | خدمات ادیت عکس و ریتاچ پرتره">
+  <meta property="og:description" content="مرجع تخصصی ادیت عکس و ریتاچ پرتره با حفظ کامل بافت طبیعی پوست.">
   <meta property="og:image" content="https://ahmadpromax.github.io/photo-editorii/images/hero-after.jpg">
   <meta property="og:url" content="https://ahmadpromax.github.io/photo-editorii/">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@Photo_Editorii">
 
+  <!-- اسکیما استاندارد و معتبر برای گوگل و هوش مصنوعی -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -93,11 +105,10 @@
   }
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- لود بدون انسداد فونت وزیرمتن -->
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- بازگرداندن Tailwind استاندارد کامل جهت رفع ۱۰۰٪ باگ‌های ظاهری -->
+  <!-- حفظ کامل Tailwind CDN و پیکربندی بدون ریسک چیدمان -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
