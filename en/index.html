@@ -4,22 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- Exact Title Under 65 Characters -->
   <title>Photo Editorii | High-End Photo Retouching & Photomontage Studio</title>
   <meta name="description" content="Expert photo retouching, natural skin frequency separation, and cinematic photomontage studio. 12-24h delivery with zero artificial plastic AI smoothing.">
   <meta name="keywords" content="photo retouching, portrait retouch, frequency separation, cinematic photomontage, photo enhancement, face swap, photo editorii">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://ahmadpromax.github.io/photo-editorii/en/">
   
-  <!-- Brand SVG Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23091518'/><text x='50%' y='68%' font-size='60' font-weight='900' fill='%23d4af37' text-anchor='middle'>P</text></svg>">
 
-  <!-- International Hreflang Tags -->
   <link rel="alternate" hreflang="fa" href="https://ahmadpromax.github.io/photo-editorii/" />
   <link rel="alternate" hreflang="en" href="https://ahmadpromax.github.io/photo-editorii/en/" />
   <link rel="alternate" hreflang="x-default" href="https://ahmadpromax.github.io/photo-editorii/" />
 
-  <!-- Social Previews & Twitter Cards -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Photo Editorii Studio">
@@ -30,7 +26,6 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@Photo_Editorii">
 
-  <!-- Clean Valid JSON-LD Schema (GEO & Knowledge Graph Ready) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -99,18 +94,43 @@
   }
   </script>
 
-  <!-- Non-blocking Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Production Stylesheet -->
-  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: {
+              dark: '#050c0e',
+              surface: '#091518',
+              card: '#0d1f23',
+              border: '#153238',
+              teal: '#0d9488',
+              accent: '#d4af37',
+              goldGlow: 'rgba(212, 175, 55, 0.15)',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .ba-container { position: relative; overflow: hidden; user-select: none; -webkit-user-select: none; }
+    .ba-overlay { position: absolute; inset: 0; width: 100%; height: 100%; clip-path: inset(0 50% 0 0); }
+    .ba-slider { position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; background-color: #d4af37; box-shadow: 0 0 14px rgba(212, 175, 55, 0.9); cursor: ew-resize; z-index: 20; }
+    .ba-handle { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 36px; height: 36px; border-radius: 50%; background: #091518; border: 2px solid #d4af37; box-shadow: 0 0 15px rgba(212, 175, 55, 0.6); display: flex; align-items: center; justify-content: center; }
+  </style>
 </head>
 
-<body class="bg-brand-dark text-slate-200 antialiased min-h-screen pb-16 md:pb-0" style="font-family: 'Inter', sans-serif;">
+<body class="bg-brand-dark text-slate-200 font-sans antialiased selection:bg-brand-accent selection:text-brand-dark min-h-screen pb-20 md:pb-0">
 
-  <!-- 1. Header with Full Navigation -->
+  <!-- 1. Header with 5 Links -->
   <header class="sticky top-0 z-40 backdrop-blur-xl bg-brand-dark/80 border-b border-brand-border/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
@@ -124,7 +144,7 @@
         </div>
       </a>
 
-      <!-- 5 Keyword-rich Navigation Links -->
+      <!-- 5 Navigation Items -->
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
         <a href="#portfolio" title="Photo Retouching Portfolio" class="hover:text-brand-accent transition-colors">Portfolio</a>
         <a href="#features" title="Why Choose Our Photo Editing" class="hover:text-brand-accent transition-colors">Why Us</a>
@@ -146,59 +166,53 @@
     </div>
   </header>
 
-  <!-- 2. Hero Section Optimized for Mobile LCP -->
-  <section class="relative pt-8 pb-16 md:pt-20 md:pb-32 overflow-hidden">
+  <!-- 2. Hero Section -->
+  <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
-        <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
           <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-surface border border-brand-border text-xs text-brand-accent shadow-inner">
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
             12–24h Turnaround ✦ 100% Real Skin Texture
           </div>
 
-          <h1 class="text-2xl sm:text-4xl lg:text-5xl font-black text-white leading-tight tracking-tight">
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight">
             High-End Photo Retouching &
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent via-yellow-200 to-amber-400">Cinematic Photomontage</span>
             with Authentic Texture
           </h1>
 
-          <p class="text-sm sm:text-base text-slate-300 font-light leading-relaxed max-w-2xl mx-auto lg:mx-0">
+          <p class="text-base sm:text-lg text-slate-300 font-light leading-relaxed max-w-2xl mx-auto lg:mx-0">
             No blurry or waxy artificial AI filters. <strong>Photo Editorii</strong> specializes in artisanal Frequency Separation and Dodge & Burn, restoring pristine studio-grade clarity to your portraits.
           </p>
 
-          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
-            <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" title="Get Free Photo Review on Telegram" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-brand-accent to-yellow-500 text-brand-dark font-extrabold text-sm sm:text-base shadow-xl hover:scale-[1.02] transition-all">
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" title="Get Free Photo Review on Telegram" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-brand-accent to-yellow-500 text-brand-dark font-extrabold text-base shadow-xl hover:scale-[1.02] transition-all">
               Send Photo for Free Review
             </a>
-            <a href="#portfolio" title="View Before and After Photo Retouching Samples" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-brand-surface hover:bg-brand-card border border-brand-border text-slate-200 font-semibold text-sm sm:text-base transition-all">
+            <a href="#portfolio" title="View Before and After Photo Retouching Samples" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-brand-surface hover:bg-brand-card border border-brand-border text-slate-200 font-semibold text-base transition-all">
               View Before / After
             </a>
           </div>
         </div>
 
-        <!-- Mobile Optimized Hero Slider -->
-        <div class="lg:col-span-5 w-full max-w-sm sm:max-w-md mx-auto">
-          <div class="relative rounded-2xl p-1.5 sm:p-2 bg-gradient-to-b from-brand-border to-brand-surface border border-brand-accent/30 shadow-2xl">
+        <div class="lg:col-span-5">
+          <div class="relative mx-auto max-w-md rounded-2xl p-2 bg-gradient-to-b from-brand-border to-brand-surface border border-brand-accent/30 shadow-2xl">
             <div class="ba-container rounded-xl aspect-[4/5]" data-slider="true">
-              <!-- Raw image lazy loaded to save initial bandwidth -->
-              <img src="../images/hero-before.jpg" width="800" height="1000" loading="lazy" alt="RAW portrait before photo retouching" title="RAW Portrait Before Edit" class="absolute inset-0 w-full h-full object-cover">
-              
-              <!-- Retouched image loaded eagerly with high priority for LCP -->
+              <img src="../images/hero-before.jpg" width="800" height="1000" loading="lazy" alt="RAW portrait before photo retouching" class="absolute inset-0 w-full h-full object-cover">
               <div class="ba-overlay">
-                <img src="../images/hero-after.jpg" width="800" height="1000" fetchpriority="high" loading="eager" alt="Artisan portrait retouching by Photo Editorii" title="Retouched Portrait by Photo Editorii" class="absolute inset-0 w-full h-full object-cover">
+                <img src="../images/hero-after.jpg" width="800" height="1000" fetchpriority="high" alt="Retouched portrait after photo retouching" class="absolute inset-0 w-full h-full object-cover">
               </div>
-
               <div class="ba-slider">
                 <div class="ba-handle">
                   <svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l-4 3 4 3m8-6l4 3-4 3"/></svg>
                 </div>
               </div>
-
-              <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-brand-accent text-[10px] sm:text-[11px] font-bold text-brand-dark z-10 pointer-events-none">Retouched (After)</span>
-              <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded bg-black/70 text-[10px] sm:text-[11px] font-semibold text-white border border-white/10 z-10 pointer-events-none">RAW (Before)</span>
+              <span class="absolute bottom-4 left-4 px-3 py-1 rounded-md bg-brand-accent text-[11px] font-bold text-brand-dark z-10 pointer-events-none">Retouched (After)</span>
+              <span class="absolute bottom-4 right-4 px-3 py-1 rounded-md bg-black/70 text-[11px] font-semibold text-white border border-white/10 z-10 pointer-events-none">RAW (Before)</span>
             </div>
-            <p class="text-center text-[11px] text-slate-400 mt-2">Drag the slider to compare photo retouching results</p>
+            <p class="text-center text-xs text-slate-400 mt-3">Drag to the right to reveal the retouched result</p>
           </div>
         </div>
 
@@ -207,46 +221,46 @@
   </section>
 
   <!-- 3. Key Metrics -->
-  <section class="border-y border-brand-border bg-brand-surface/70 py-6 sm:py-8">
+  <section class="border-y border-brand-border bg-brand-surface/70 py-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
         <div>
-          <div class="text-brand-accent font-black text-xl sm:text-3xl">12–24h</div>
-          <div class="text-xs sm:text-sm text-slate-300 font-medium">Turnaround Delivery</div>
+          <div class="text-brand-accent font-black text-2xl sm:text-3xl">12–24h</div>
+          <div class="text-xs sm:text-sm text-slate-300 font-medium">Turnaround Time</div>
         </div>
         <div>
-          <div class="text-brand-accent font-black text-xl sm:text-3xl">100% Real</div>
-          <div class="text-xs sm:text-sm text-slate-300 font-medium">Authentic Skin Pores</div>
+          <div class="text-brand-accent font-black text-2xl sm:text-3xl">100% Real</div>
+          <div class="text-xs sm:text-sm text-slate-300 font-medium">Organic Skin Pores</div>
         </div>
         <div>
-          <div class="text-brand-accent font-black text-xl sm:text-3xl">Guaranteed</div>
+          <div class="text-brand-accent font-black text-2xl sm:text-3xl">Guaranteed</div>
           <div class="text-xs sm:text-sm text-slate-300 font-medium">Unlimited Revisions</div>
         </div>
         <div>
-          <div class="text-brand-accent font-black text-xl sm:text-3xl">Free</div>
+          <div class="text-brand-accent font-black text-2xl sm:text-3xl">Free</div>
           <div class="text-xs sm:text-sm text-slate-300 font-medium">Feasibility Review</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 4. Portfolio Section -->
-  <section id="portfolio" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center space-y-3 sm:space-y-4 mb-8 sm:mb-12">
-      <h2 class="text-brand-accent text-xs sm:text-sm font-bold tracking-widest uppercase">Photo Retouching Portfolio</h2>
-      <p class="text-2xl sm:text-4xl font-extrabold text-white">Genuine Artistry in Photo Editing</p>
-      <p class="text-slate-400 text-xs sm:text-sm">Drag the divider to examine real before/after photo editing details.</p>
+  <!-- 4. Portfolio (Clean Showcase) -->
+  <section id="portfolio" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center space-y-4 mb-12">
+      <h2 class="text-brand-accent text-sm font-bold tracking-widest uppercase">Photo Retouching Portfolio</h2>
+      <p class="text-3xl sm:text-4xl font-extrabold text-white">Genuine Artistry in Photo Editing</p>
+      <p class="text-slate-400 text-sm sm:text-base">Drag the divider to examine real before/after photo editing details.</p>
     </div>
 
     <!-- 3 Category Tabs -->
-    <div class="flex flex-wrap items-center justify-center gap-2 mb-8 sm:mb-12">
-      <button class="portfolio-tab active px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all bg-brand-accent text-brand-dark border-brand-accent" data-target="tab-montage">
+    <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
+      <button class="portfolio-tab active px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all bg-brand-accent text-brand-dark border-brand-accent" data-target="tab-montage">
         Cinematic Photomontage
       </button>
-      <button class="portfolio-tab px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all bg-brand-surface text-slate-300 border-brand-border hover:border-brand-accent/50" data-target="tab-beauty">
+      <button class="portfolio-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all bg-brand-surface text-slate-300 border-brand-border hover:border-brand-accent/50" data-target="tab-beauty">
         Beauty Portrait Retouching
       </button>
-      <button class="portfolio-tab px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all bg-brand-surface text-slate-300 border-brand-border hover:border-brand-accent/50" data-target="tab-enhance">
+      <button class="portfolio-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all bg-brand-surface text-slate-300 border-brand-border hover:border-brand-accent/50" data-target="tab-enhance">
         Quality Photo Enhancement
       </button>
     </div>
@@ -254,60 +268,61 @@
     <div class="max-w-4xl mx-auto">
       
       <!-- Sample 1 -->
-      <div id="tab-montage" class="portfolio-panel bg-brand-surface rounded-2xl p-3 sm:p-6 border border-brand-border space-y-3">
+      <div id="tab-montage" class="portfolio-panel bg-brand-surface rounded-2xl p-4 sm:p-6 border border-brand-border space-y-3">
         <div class="ba-container rounded-xl aspect-[16/10]" data-slider="true">
-          <img src="../images/montage-before.jpg" width="1200" height="750" loading="lazy" alt="Original photo before cinematic photomontage" title="Before Photomontage" class="absolute inset-0 w-full h-full object-cover">
+          <img src="../images/montage-before.jpg" width="1200" height="750" loading="lazy" alt="Original photo before cinematic photomontage" class="absolute inset-0 w-full h-full object-cover">
           <div class="ba-overlay">
-            <img src="../images/montage-after.jpg" width="1200" height="750" loading="lazy" alt="Completed cinematic photomontage by Photo Editorii" title="After Photomontage" class="absolute inset-0 w-full h-full object-cover">
+            <img src="../images/montage-after.jpg" width="1200" height="750" loading="lazy" alt="Completed cinematic photomontage by Photo Editorii" class="absolute inset-0 w-full h-full object-cover">
           </div>
           <div class="ba-slider"><div class="ba-handle"><svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l-4 3 4 3m8-6l4 3-4 3"/></svg></div></div>
-          <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded bg-brand-accent text-[10px] font-bold text-brand-dark z-10 pointer-events-none">Edited (After)</span>
-          <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/70 text-[10px] font-medium text-white border border-white/10 z-10 pointer-events-none">RAW (Before)</span>
+          <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-brand-accent text-[11px] font-bold text-brand-dark z-10 pointer-events-none">Edited (After)</span>
+          <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded bg-black/70 text-[11px] font-medium text-white border border-white/10 z-10 pointer-events-none">RAW (Before)</span>
         </div>
         <div class="flex items-center justify-between pt-1">
-          <h3 class="font-bold text-white text-sm sm:text-base">Cinematic Composite & Scene Manipulation</h3>
-          <span class="text-[11px] text-brand-accent bg-brand-card px-2.5 py-1 rounded-full border border-brand-border">4K Output</span>
+          <h3 class="font-bold text-white text-base">Cinematic Composite & Scene Manipulation</h3>
+          <span class="text-xs text-brand-accent bg-brand-card px-2.5 py-1 rounded-full border border-brand-border">4K Output</span>
         </div>
       </div>
 
       <!-- Sample 2 -->
-      <div id="tab-beauty" class="portfolio-panel hidden bg-brand-surface rounded-2xl p-3 sm:p-6 border border-brand-border space-y-3">
+      <div id="tab-beauty" class="portfolio-panel hidden bg-brand-surface rounded-2xl p-4 sm:p-6 border border-brand-border space-y-3">
         <div class="ba-container rounded-xl aspect-[16/10]" data-slider="true">
-          <img src="../images/beauty-before.jpg" width="1200" height="750" loading="lazy" alt="Close-up portrait before beauty retouching" title="Before Beauty Retouch" class="absolute inset-0 w-full h-full object-cover">
+          <img src="../images/beauty-before.jpg" width="1200" height="750" loading="lazy" alt="Close-up portrait before beauty retouching" class="absolute inset-0 w-full h-full object-cover">
           <div class="ba-overlay">
-            <img src="../images/beauty-after.jpg" width="1200" height="750" loading="lazy" alt="High-end beauty skin retouching preserving natural pores" title="After Beauty Retouch" class="absolute inset-0 w-full h-full object-cover">
+            <img src="../images/beauty-after.jpg" width="1200" height="750" loading="lazy" alt="High-end beauty skin retouching" class="absolute inset-0 w-full h-full object-cover">
           </div>
           <div class="ba-slider"><div class="ba-handle"><svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l-4 3 4 3m8-6l4 3-4 3"/></svg></div></div>
-          <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded bg-brand-accent text-[10px] font-bold text-brand-dark z-10 pointer-events-none">Edited (After)</span>
-          <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/70 text-[10px] font-medium text-white border border-white/10 z-10 pointer-events-none">RAW (Before)</span>
+          <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-brand-accent text-[11px] font-bold text-brand-dark z-10 pointer-events-none">Edited (After)</span>
+          <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded bg-black/70 text-[11px] font-medium text-white border border-white/10 z-10 pointer-events-none">RAW (Before)</span>
         </div>
         <div class="flex items-center justify-between pt-1">
-          <h3 class="font-bold text-white text-sm sm:text-base">Studio Beauty Retouching & Tone Refinement</h3>
-          <span class="text-[11px] text-brand-accent bg-brand-card px-2.5 py-1 rounded-full border border-brand-border">100% Real Pores</span>
+          <h3 class="font-bold text-white text-base">Studio Beauty Retouching & Tone Refinement</h3>
+          <span class="text-xs text-brand-accent bg-brand-card px-2.5 py-1 rounded-full border border-brand-border">100% Real Pores</span>
         </div>
       </div>
 
       <!-- Sample 3 -->
-      <div id="tab-enhance" class="portfolio-panel hidden bg-brand-surface rounded-2xl p-3 sm:p-6 border border-brand-border space-y-3">
+      <div id="tab-enhance" class="portfolio-panel hidden bg-brand-surface rounded-2xl p-4 sm:p-6 border border-brand-border space-y-3">
         <div class="ba-container rounded-xl aspect-[16/10]" data-slider="true">
-          <img src="../images/enhance-before.jpg" width="1200" height="750" loading="lazy" alt="Blurry low-resolution photo before enhancement" title="Before Photo Enhancement" class="absolute inset-0 w-full h-full object-cover">
+          <img src="../images/enhance-before.jpg" width="1200" height="750" loading="lazy" alt="Blurry low-resolution photo before enhancement" class="absolute inset-0 w-full h-full object-cover">
           <div class="ba-overlay">
-            <img src="../images/enhance-after.jpg" width="1200" height="750" loading="lazy" alt="De-blurred sharp image after quality enhancement" title="After Photo Enhancement" class="absolute inset-0 w-full h-full object-cover">
+            <img src="../images/enhance-after.jpg" width="1200" height="750" loading="lazy" alt="De-blurred sharp image after quality enhancement" class="absolute inset-0 w-full h-full object-cover">
           </div>
           <div class="ba-slider"><div class="ba-handle"><svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l-4 3 4 3m8-6l4 3-4 3"/></svg></div></div>
-          <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded bg-brand-accent text-[10px] font-bold text-brand-dark z-10 pointer-events-none">Edited (After)</span>
-          <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/70 text-[10px] font-medium text-white border border-white/10 z-10 pointer-events-none">RAW (Before)</span>
+          <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-brand-accent text-[11px] font-bold text-brand-dark z-10 pointer-events-none">Edited (After)</span>
+          <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded bg-black/70 text-[11px] font-medium text-white border border-white/10 z-10 pointer-events-none">RAW (Before)</span>
         </div>
         <div class="flex items-center justify-between pt-1">
-          <h3 class="font-bold text-white text-sm sm:text-base">Clarity Recovery & Lighting Restoration</h3>
-          <span class="text-[11px] text-brand-accent bg-brand-card px-2.5 py-1 rounded-full border border-brand-border">Sharp Recovery</span>
+          <h3 class="font-bold text-white text-base">Clarity Recovery & Lighting Restoration</h3>
+          <span class="text-xs text-brand-accent bg-brand-card px-2.5 py-1 rounded-full border border-brand-border">Sharp Recovery</span>
         </div>
       </div>
 
     </div>
 
-    <div class="mt-8 sm:mt-12 text-center">
-      <a href="https://t.me/Photo_Editorii" target="_blank" rel="noopener noreferrer" title="View Portfolio Samples in Telegram Channel" class="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-brand-accent hover:text-yellow-300 transition-colors">
+    <!-- CTA Button with 60+ samples -->
+    <div class="mt-14 text-center">
+      <a href="https://t.me/Photo_Editorii" target="_blank" rel="noopener noreferrer" title="View Portfolio Samples in Telegram Channel" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-accent hover:text-yellow-300 transition-colors">
         View 60+ Real Portfolio Samples in Photo Editorii Telegram Channel
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
       </a>
@@ -315,29 +330,29 @@
   </section>
 
   <!-- 5. Value Differentiators -->
-  <section id="features" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-border">
-    <div class="text-center space-y-3 sm:space-y-4 mb-12 sm:mb-16">
-      <h2 class="text-brand-accent text-xs sm:text-sm font-bold tracking-widest uppercase">Why Choose Photo Editorii</h2>
-      <p class="text-2xl sm:text-4xl font-black text-white">Artisanal Craftsmanship vs. AI Blur Filters</p>
+  <section id="features" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-border">
+    <div class="text-center space-y-4 mb-16">
+      <h2 class="text-brand-accent text-sm font-bold tracking-widest uppercase">Why Choose Photo Editorii</h2>
+      <p class="text-3xl sm:text-4xl font-black text-white">Artisanal Craftsmanship vs. AI Blur Filters</p>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="p-5 sm:p-6 rounded-2xl bg-brand-surface border border-brand-border space-y-2">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="p-6 rounded-2xl bg-brand-surface border border-brand-border space-y-3">
         <h3 class="font-bold text-white text-base">100% Genuine Skin Texture</h3>
         <p class="text-xs text-slate-400 leading-relaxed">No homogenous plastic blur filters that render facial expressions fake or waxy.</p>
       </div>
 
-      <div class="p-5 sm:p-6 rounded-2xl bg-brand-surface border border-brand-border space-y-2">
+      <div class="p-6 rounded-2xl bg-brand-surface border border-brand-border space-y-3">
         <h3 class="font-bold text-white text-base">Cinematic 3D Lighting</h3>
         <p class="text-xs text-slate-400 leading-relaxed">Accurate Kelvin color temperature, sunlight angles, and realistic depth shadows.</p>
       </div>
 
-      <div class="p-5 sm:p-6 rounded-2xl bg-brand-surface border border-brand-border space-y-2">
+      <div class="p-6 rounded-2xl bg-brand-surface border border-brand-border space-y-3">
         <h3 class="font-bold text-white text-base">Strict Data Confidentiality</h3>
         <p class="text-xs text-slate-400 leading-relaxed">All client photographs are retouched in isolated environments and permanently deleted.</p>
       </div>
 
-      <div class="p-5 sm:p-6 rounded-2xl bg-brand-surface border border-brand-border space-y-2">
+      <div class="p-6 rounded-2xl bg-brand-surface border border-brand-border space-y-3">
         <h3 class="font-bold text-white text-base">Upfront Feasibility Advice</h3>
         <p class="text-xs text-slate-400 leading-relaxed">If your original file cannot yield top-tier results, we advise you honestly before payment.</p>
       </div>
@@ -345,12 +360,12 @@
   </section>
 
   <!-- 6. Pricing Packages -->
-  <section id="pricing" class="py-16 sm:py-20 bg-brand-surface/40 border-t border-brand-border">
+  <section id="pricing" class="py-20 bg-brand-surface/40 border-t border-brand-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center space-y-2 sm:space-y-3 mb-12 sm:mb-16">
-        <h2 class="text-brand-accent text-xs sm:text-sm font-bold tracking-widest uppercase">Photo Editing Rates</h2>
-        <p class="text-2xl sm:text-4xl font-black text-white">Transparent Photo Retouching Pricing</p>
-        <p class="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto">Clear deliverables and quality commitments for every photo editing project.</p>
+      <div class="text-center space-y-3 mb-16">
+        <h2 class="text-brand-accent text-sm font-bold tracking-widest uppercase">Photo Editing Rates</h2>
+        <p class="text-3xl sm:text-4xl font-black text-white">Transparent Photo Retouching Pricing</p>
+        <p class="text-slate-400 text-sm max-w-xl mx-auto">Clear deliverables and quality commitments for every photo editing project.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -363,7 +378,7 @@
               <span class="text-xs text-slate-400">Starting from:</span>
               <div class="text-2xl font-black text-white mt-1">$3.5 <span class="text-xs font-normal text-slate-400">/ photo</span></div>
             </div>
-            <ul class="space-y-2 text-xs text-slate-300 pt-3 border-t border-brand-border/60">
+            <ul class="space-y-2.5 text-xs text-slate-300 pt-3 border-t border-brand-border/60">
               <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> De-blurring and detail recovery for vintage images</li>
               <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Lighting adjustment, tone balance & object removal</li>
               <li class="flex items-start gap-2 text-slate-400"><span class="text-brand-accent">✓</span> Resolution reconstruction</li>
@@ -380,7 +395,7 @@
               <span class="text-xs text-slate-400">Starting from:</span>
               <div class="text-2xl font-black text-white mt-1">$6.5 <span class="text-xs font-normal text-slate-400">/ photo</span></div>
             </div>
-            <ul class="space-y-2 text-xs text-slate-300 pt-3 border-t border-brand-border/60">
+            <ul class="space-y-2.5 text-xs text-slate-300 pt-3 border-t border-brand-border/60">
               <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Blemish removal preserving 100% natural skin pores</li>
               <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Hair, eye, nose contouring & makeup refinement</li>
               <li class="flex items-start gap-2 text-slate-400"><span class="text-brand-accent">✓</span> Advanced manual Dodge & Burn technique</li>
@@ -389,16 +404,16 @@
           <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" title="Order Beauty Retouching on Telegram" class="mt-6 w-full py-3 rounded-xl bg-brand-surface hover:bg-brand-border border border-brand-border text-center text-xs font-bold text-white transition-colors">Order Portrait Retouch</a>
         </div>
 
-        <!-- Card 3 -->
+        <!-- Card 3 (Signature VIP Badge Restored) -->
         <div class="bg-gradient-to-b from-brand-card to-brand-surface rounded-2xl p-6 border-2 border-brand-accent relative flex flex-col justify-between shadow-xl">
-          <div class="absolute -top-3 left-6 bg-gradient-to-r from-brand-accent to-yellow-500 text-brand-dark font-extrabold text-[10px] px-3 py-1 rounded-full uppercase">Signature VIP</div>
+          <div class="absolute -top-3.5 left-6 bg-gradient-to-r from-brand-accent to-yellow-500 text-brand-dark font-extrabold text-[11px] px-3.5 py-1 rounded-full uppercase tracking-wider shadow-md">Signature VIP</div>
           <div class="space-y-4">
             <h3 class="text-lg font-black text-white">Cinematic Photomontage</h3>
             <div>
               <span class="text-xs text-slate-400">Price range:</span>
               <div class="text-2xl font-black text-brand-accent mt-1">$7.5 <span class="text-xs font-normal text-slate-300">/ photo</span></div>
             </div>
-            <ul class="space-y-2 text-xs text-slate-200 pt-3 border-t border-brand-border/60">
+            <ul class="space-y-2.5 text-xs text-slate-200 pt-3 border-t border-brand-border/60">
               <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Natural couple composites from solo photos</li>
               <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Scene replacement (luxury jets, private villas, sets)</li>
               <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Face swaps with precise perspective lighting</li>
@@ -416,7 +431,7 @@
               <span class="text-xs text-slate-400">Pricing:</span>
               <div class="text-xl font-bold text-white mt-1">Custom Quote</div>
             </div>
-            <ul class="space-y-2 text-xs text-slate-300 pt-3 border-t border-brand-border/60">
+            <ul class="space-y-2.5 text-xs text-slate-300 pt-3 border-t border-brand-border/60">
               <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Exact paper texture, grain, and typography match</li>
               <li class="flex items-start gap-2"><span class="text-brand-accent">✓</span> Zero digital footprint or editing artifacts</li>
               <li class="flex items-start gap-2 text-slate-400"><span class="text-brand-accent">✓</span> Permanent post-delivery file purge</li>
@@ -430,33 +445,33 @@
   </section>
 
   <!-- 7. Order Workflow -->
-  <section id="workflow" class="py-16 sm:py-20 bg-brand-surface/50 border-t border-brand-border">
+  <section id="workflow" class="py-20 bg-brand-surface/50 border-t border-brand-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center space-y-3 sm:space-y-4 mb-12 sm:mb-16">
-        <h2 class="text-brand-accent text-xs sm:text-sm font-bold tracking-widest uppercase">Ordering Process</h2>
-        <p class="text-2xl sm:text-4xl font-black text-white">4 Simple Steps to Your Photo Edit</p>
+      <div class="text-center space-y-4 mb-16">
+        <h2 class="text-brand-accent text-sm font-bold tracking-widest uppercase">Ordering Process</h2>
+        <p class="text-3xl sm:text-4xl font-black text-white">4 Simple Steps to Your Photo Edit</p>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border space-y-2">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border space-y-3">
           <span class="text-3xl font-black text-brand-accent/30">01</span>
           <h3 class="font-bold text-white text-base">Send File on Telegram</h3>
           <p class="text-xs text-slate-400 leading-relaxed">Send your original photograph as an uncompressed file on Telegram.</p>
         </div>
 
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border space-y-2">
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border space-y-3">
           <span class="text-3xl font-black text-brand-accent/30">02</span>
           <h3 class="font-bold text-white text-base">Free Feasibility Analysis</h3>
           <p class="text-xs text-slate-400 leading-relaxed">We review resolution, lighting compatibility, and advise transparently.</p>
         </div>
 
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border space-y-2">
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border space-y-3">
           <span class="text-3xl font-black text-brand-accent/30">03</span>
           <h3 class="font-bold text-white text-base">Studio Execution</h3>
           <p class="text-xs text-slate-400 leading-relaxed">Your image goes through our meticulous frequency separation pipeline.</p>
         </div>
 
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border space-y-2">
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border space-y-3">
           <span class="text-3xl font-black text-brand-accent/30">04</span>
           <h3 class="font-bold text-white text-base">Preview & 4K Delivery</h3>
           <p class="text-xs text-slate-400 leading-relaxed">Review preview watermarks, request adjustments, and receive full 4K output.</p>
@@ -465,50 +480,50 @@
     </div>
   </section>
 
-  <!-- 8. FAQ Accordion -->
-  <section id="faq" class="py-16 sm:py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-border">
-    <div class="text-center space-y-3 sm:space-y-4 mb-12 sm:mb-16">
-      <h2 class="text-brand-accent text-xs sm:text-sm font-bold tracking-widest uppercase">FAQ</h2>
-      <p class="text-2xl sm:text-4xl font-black text-white">Frequently Asked Questions</p>
+  <!-- 8. FAQ -->
+  <section id="faq" class="py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-border">
+    <div class="text-center space-y-4 mb-16">
+      <h2 class="text-brand-accent text-sm font-bold tracking-widest uppercase">FAQ</h2>
+      <p class="text-3xl sm:text-4xl font-black text-white">Frequently Asked Questions</p>
     </div>
 
-    <div class="space-y-3 sm:space-y-4">
+    <div class="space-y-4">
       <div class="faq-item bg-brand-surface rounded-xl border border-brand-border overflow-hidden">
-        <button class="faq-toggle w-full p-4 sm:p-5 text-left font-bold text-white flex justify-between items-center hover:text-brand-accent">
+        <button class="faq-toggle w-full p-5 text-left font-bold text-white flex justify-between items-center transition-colors hover:text-brand-accent">
           <span>What happens if I am not satisfied with the photo retouching?</span>
           <svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </button>
-        <div class="faq-content hidden p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-brand-border/40">
+        <div class="faq-content hidden p-5 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-brand-border/40">
           Every photo editing project includes an unlimited revision guarantee. We adjust lighting, skin tone, and styling until it meets 100% of your aesthetic expectations.
         </div>
       </div>
 
       <div class="faq-item bg-brand-surface rounded-xl border border-brand-border overflow-hidden">
-        <button class="faq-toggle w-full p-4 sm:p-5 text-left font-bold text-white flex justify-between items-center hover:text-brand-accent">
+        <button class="faq-toggle w-full p-5 text-left font-bold text-white flex justify-between items-center transition-colors hover:text-brand-accent">
           <span>How does Frequency Separation differ from automated AI retouching?</span>
           <svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </button>
-        <div class="faq-content hidden p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-brand-border/40">
+        <div class="faq-content hidden p-5 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-brand-border/40">
           Automated AI filters blur skin homogenously, destroying genuine pores and facial identity. Frequency separation splits color and texture into separate layers, eliminating blemishes while keeping natural pores intact.
         </div>
       </div>
 
       <div class="faq-item bg-brand-surface rounded-xl border border-brand-border overflow-hidden">
-        <button class="faq-toggle w-full p-4 sm:p-5 text-left font-bold text-white flex justify-between items-center hover:text-brand-accent">
+        <button class="faq-toggle w-full p-5 text-left font-bold text-white flex justify-between items-center transition-colors hover:text-brand-accent">
           <span>Is express delivery under 12 hours available for urgent projects?</span>
           <svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </button>
-        <div class="faq-content hidden p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-brand-border/40">
+        <div class="faq-content hidden p-5 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-brand-border/40">
           Yes. If you require urgent delivery, please mention it in your first Telegram message to be scheduled for priority express turnaround under 6 to 8 hours.
         </div>
       </div>
 
       <div class="faq-item bg-brand-surface rounded-xl border border-brand-border overflow-hidden">
-        <button class="faq-toggle w-full p-4 sm:p-5 text-left font-bold text-white flex justify-between items-center hover:text-brand-accent">
+        <button class="faq-toggle w-full p-5 text-left font-bold text-white flex justify-between items-center transition-colors hover:text-brand-accent">
           <span>Do you publish client portraits or store sensitive files?</span>
           <svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </button>
-        <div class="faq-content hidden p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-brand-border/40">
+        <div class="faq-content hidden p-5 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-brand-border/40">
           Never without explicit written consent. Client confidentiality is guaranteed; all work files are edited locally and purged 72 hours following delivery.
         </div>
       </div>
@@ -516,17 +531,17 @@
   </section>
 
   <!-- 9. AI Entity Block -->
-  <section class="py-10 sm:py-14 bg-brand-surface/40 border-t border-brand-border/60">
+  <section class="py-16 bg-brand-surface/30 border-t border-brand-border">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
-      <h2 class="text-sm sm:text-base font-bold text-white mb-2 sm:mb-3">About Photo Editorii Studio</h2>
-      <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+      <h2 class="text-base font-bold text-brand-accent mb-3">About Photo Editorii Studio</h2>
+      <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
         <strong>Photo Editorii Studio</strong> is a premier independent visual lab specializing in artisanal <em>photo retouching</em>, <em>cinematic photomontage</em>, and <em>confidential document editing</em>. Setting itself apart from automated AI blurring tools, Photo Editorii strictly applies master-level Frequency Separation and Dodge & Burn to preserve 100% genuine skin pores and facial identity. Offering transparent rates from $3.5 to $7.5, complimentary feasibility reviews, unlimited revision guarantees, and express 12-to-24-hour turnaround, Photo Editorii delivers authentic studio excellence.
       </p>
     </div>
   </section>
 
   <!-- 10. Footer -->
-  <footer class="border-t border-brand-border bg-brand-dark py-10 sm:py-12">
+  <footer class="border-t border-brand-border bg-brand-dark py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
         <div class="space-y-3 md:col-span-2">
@@ -552,7 +567,7 @@
         </div>
       </div>
 
-      <div class="pt-6 sm:pt-8 border-t border-brand-border/60 text-center text-xs text-slate-500">
+      <div class="pt-8 border-t border-brand-border/60 text-center text-xs text-slate-500">
         © All rights reserved for Photo Editorii Studio.
       </div>
     </div>
