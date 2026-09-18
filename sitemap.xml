@@ -4,12 +4,14 @@
     <loc>https://ahmadpromax.github.io/photo-editorii/</loc>
     <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadpromax.github.io/photo-editorii/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ahmadpromax.github.io/photo-editorii/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ahmadpromax.github.io/photo-editorii/"/>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://ahmadpromax.github.io/photo-editorii/en/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://ahmadpromax.github.io/photo-editorii/en/"/>
     <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadpromax.github.io/photo-editorii/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ahmadpromax.github.io/photo-editorii/"/>
     <priority>0.8</priority>
   </url>
 </urlset>
