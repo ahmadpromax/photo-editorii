@@ -13,10 +13,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- بارگذاری فوق سریع تصویر هیرو نسخه انگلیسی با WebP و آدرس‌دهی والد -->
+  <!-- بارگذاری بهینه هیرو نسخه انگلیسی با WebP و آدرس‌دهی والد -->
   <link rel="preload" as="image" href="../images/hero-after.webp" type="image/webp" fetchpriority="high">
 
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23091518'/><text x='50%' y='68%' font-size='60' font-weight='900' fill='%23d4af37' text-anchor='middle'>P</text></svg>">
+  <!-- فاوآیکون رسمی -->
+  <link rel="icon" href="../images/photo-editori-logo.webp" type="image/webp">
 
   <link rel="alternate" hreflang="fa" href="https://ahmadpromax.github.io/photo-editorii/" />
   <link rel="alternate" hreflang="en" href="https://ahmadpromax.github.io/photo-editorii/en/" />
@@ -27,7 +28,7 @@
   <meta property="og:site_name" content="Photo Editorii Studio">
   <meta property="og:title" content="Photo Editorii | Photo Retouching & Cinematic Photomontage">
   <meta property="og:description" content="High-end artisanal photo editing and portrait retouching with 100% natural skin pore preservation.">
-  <meta property="og:image" content="https://ahmadpromax.github.io/photo-editorii/images/hero-after.webp">
+  <meta property="og:image" content="https://ahmadpromax.github.io/photo-editorii/images/photo-editori-logo.webp">
   <meta property="og:url" content="https://ahmadpromax.github.io/photo-editorii/en/">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@Photo_Editorii">
@@ -42,7 +43,7 @@
         "name": "Photo Editorii Studio",
         "alternateName": "Photo Editorii",
         "url": "https://ahmadpromax.github.io/photo-editorii/en/",
-        "logo": "https://ahmadpromax.github.io/photo-editorii/images/hero-after.webp",
+        "logo": "https://ahmadpromax.github.io/photo-editorii/images/photo-editori-logo.webp",
         "image": "https://ahmadpromax.github.io/photo-editorii/images/hero-after.webp",
         "description": "Artisan photo editing studio specialized in manual frequency separation, portrait retouching, and cinematic photomontage.",
         "priceRange": "$3.5 - $7.5 USD",
@@ -134,13 +135,13 @@
 
 <body class="bg-brand-dark text-slate-200 font-sans antialiased selection:bg-brand-accent selection:text-brand-dark min-h-screen pb-20 md:pb-0">
 
-  <!-- 1. Header with Full Navigation -->
+  <!-- 1. Header with Full Navigation & New Logo -->
   <header class="sticky top-0 z-40 backdrop-blur-xl bg-brand-dark/80 border-b border-brand-border/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
       <a href="./" title="Photo Editorii Home" class="flex items-center gap-3 group">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-border to-brand-card border border-brand-accent/40 flex items-center justify-center shadow-lg shadow-brand-goldGlow group-hover:border-brand-accent transition-colors">
-          <span class="text-brand-accent font-black text-xl">P</span>
+        <div class="w-10 h-10 rounded-xl bg-brand-surface border border-brand-accent/40 overflow-hidden flex items-center justify-center shadow-lg shadow-brand-goldGlow group-hover:border-brand-accent transition-colors p-1">
+          <img src="../images/photo-editori-logo.webp" alt="Photo Editorii Logo" width="750" height="750" class="w-full h-full object-contain">
         </div>
         <div class="flex flex-col">
           <span class="font-black text-lg text-white tracking-tight group-hover:text-brand-accent transition-colors">PHOTO EDITORII</span>
@@ -148,6 +149,7 @@
         </div>
       </a>
 
+      <!-- 5 Navigation Items -->
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
         <a href="#portfolio" title="Photo Retouching Portfolio" class="hover:text-brand-accent transition-colors">Portfolio</a>
         <a href="#features" title="Why Choose Our Photo Editing" class="hover:text-brand-accent transition-colors">Why Us</a>
@@ -255,6 +257,7 @@
       <p class="text-slate-400 text-sm sm:text-base">Drag the divider to examine real before/after photo editing details.</p>
     </div>
 
+    <!-- 3 Category Tabs -->
     <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
       <button class="portfolio-tab active px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold border transition-all bg-brand-accent text-brand-dark border-brand-accent" data-target="tab-montage">
         1. Cinematic Photomontage
@@ -541,13 +544,16 @@
     </div>
   </section>
 
-  <!-- 10. Footer -->
+  <!-- 10. Footer with New Logo -->
   <footer class="border-t border-brand-border bg-brand-dark py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        
         <div class="space-y-3 md:col-span-2">
           <div class="flex items-center gap-2">
-            <div class="w-8 h-8 rounded-lg bg-brand-card border border-brand-accent/40 flex items-center justify-center text-brand-accent font-bold">P</div>
+            <div class="w-8 h-8 rounded-lg bg-brand-surface border border-brand-accent/40 overflow-hidden flex items-center justify-center p-0.5">
+              <img src="../images/photo-editori-logo.webp" alt="Photo Editorii Logo" width="750" height="750" class="w-full h-full object-contain">
+            </div>
             <span class="font-extrabold text-white text-lg">Photo Editorii Studio</span>
           </div>
           <p class="text-xs text-slate-400 leading-relaxed max-w-sm">Specialized natural skin photo retouching, cinematic composites, and confidential digital restoration.</p>
@@ -556,9 +562,9 @@
         <div class="space-y-2">
           <h4 class="text-sm font-bold text-white">Telegram Channels</h4>
           <ul class="text-xs space-y-1 text-slate-400">
-            <li>Portfolio: <a href="https://t.me/Photo_Editorii" target="_blank" rel="noopener noreferrer" title="Photo Editorii Telegram Portfolio" class="text-brand-accent">Photo Editorii Channel</a></li>
-            <li>Orders: <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" title="Place Photo Retouching Order" class="text-brand-accent">Order Support</a></li>
-            <li>Direct Desk: <a href="https://t.me/ahmo_ba_to" target="_blank" rel="noopener noreferrer" title="Management Desk" class="text-brand-accent">Direct Contact</a></li>
+            <li>Portfolio: <a href="https://t.me/Photo_Editorii" target="_blank" rel="noopener noreferrer" title="Photo Editorii Telegram Portfolio" class="text-brand-accent hover:underline">Photo Editorii Channel</a></li>
+            <li>Orders: <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" title="Place Photo Retouching Order" class="text-brand-accent hover:underline">Order Support</a></li>
+            <li>Direct Desk: <a href="https://t.me/ahmo_ba_to" target="_blank" rel="noopener noreferrer" title="Management Desk" class="text-brand-accent hover:underline">Direct Contact</a></li>
           </ul>
         </div>
 
@@ -566,6 +572,7 @@
           <h4 class="text-sm font-bold text-white">Commitment</h4>
           <p class="text-xs text-slate-400 leading-relaxed">12 to 24-hour turnaround for single orders with daily active support on Telegram.</p>
         </div>
+
       </div>
 
       <div class="pt-8 border-t border-brand-border/60 text-center text-xs text-slate-500">
