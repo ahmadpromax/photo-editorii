@@ -218,8 +218,6 @@
       }
     };
 
-    let currentLang = 'fa';
-
     const langBtn = document.getElementById('langBtn');
     const langText = document.getElementById('langText');
     const btnWebsite = document.getElementById('btnWebsite');
@@ -227,11 +225,11 @@
     const txtTelegram = document.getElementById('txtTelegram');
     const txtSupport = document.getElementById('txtSupport');
 
-    langBtn.addEventListener('click', () => {
-      currentLang = currentLang === 'fa' ? 'en' : 'fa';
-      const data = translations[currentLang];
+    function applyLanguage(lang) {
+      currentLang = lang;
+      const data = translations[lang];
 
-      document.documentElement.lang = currentLang;
+      document.documentElement.lang = lang;
       document.documentElement.dir = data.dir;
 
       langText.textContent = data.langSwitchText;
@@ -239,6 +237,18 @@
       txtWebsite.textContent = data.websiteText;
       txtTelegram.textContent = data.telegramText;
       txtSupport.textContent = data.supportText;
+    }
+
+    // بررسی پارامتر آدرس (اگر lang=en بود، انگلیسی لود شود)
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialLang = urlParams.get('lang') === 'en' ? 'en' : 'fa';
+    let currentLang = initialLang;
+
+    applyLanguage(initialLang);
+
+    langBtn.addEventListener('click', () => {
+      const nextLang = currentLang === 'fa' ? 'en' : 'fa';
+      applyLanguage(nextLang);
     });
   </script>
 
