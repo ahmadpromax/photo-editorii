@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PHOTO_EDITORII | LINKS</title>
+  <title>PHOTO EDITORII | LINKS</title>
   <meta name="description" content="Official links hub for Photo Editorii Studio. Access website, portfolio, Telegram channel, and direct support.">
   <meta name="robots" content="noindex, follow">
   
   <!-- Favicon -->
   <link rel="icon" href="../images/photo-editori-logo.webp" type="image/webp">
 
-  <!-- Minimal Inline Styles for Maximum Speed & 0ms Render Blocking -->
+  <!-- Google Font Vazirmatn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;800&display=swap" rel="stylesheet">
+
   <style>
     * {
       box-sizing: border-box;
@@ -20,14 +24,45 @@
     body {
       background-color: #050c0e;
       color: #e2e8f0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      padding: 48px 20px 24px;
+      padding: 24px 20px;
       -webkit-font-smoothing: antialiased;
+    }
+    .top-bar {
+      width: 100%;
+      max-width: 440px;
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+    }
+    .lang-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 10px;
+      border: 1px solid #153238;
+      background: #091518;
+      color: #cbd5e1;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .lang-switch:hover {
+      border-color: #d4af37;
+      color: #d4af37;
+    }
+    .lang-switch svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      fill: none;
     }
     .container {
       width: 100%;
@@ -35,12 +70,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 28px;
+      gap: 24px;
     }
     .logo-wrapper {
-      width: 88px;
-      height: 88px;
-      border-radius: 20px;
+      width: 90px;
+      height: 90px;
+      border-radius: 22px;
       background: #091518;
       border: 2px solid rgba(212, 175, 55, 0.4);
       overflow: hidden;
@@ -58,10 +93,11 @@
     h1 {
       font-size: 1.15rem;
       font-weight: 800;
-      letter-spacing: 2px;
+      letter-spacing: 1.5px;
       color: #ffffff;
       text-transform: uppercase;
       text-align: center;
+      direction: ltr;
     }
     .links-group {
       width: 100%;
@@ -73,18 +109,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      gap: 8px;
       width: 100%;
       padding: 16px 20px;
       border-radius: 14px;
       text-decoration: none;
       font-size: 0.95rem;
       font-weight: 700;
-      letter-spacing: 0.5px;
       transition: all 0.2s ease;
       cursor: pointer;
       text-align: center;
     }
-    /* Button 1: Primary Gold CTA */
     .btn-primary {
       background: linear-gradient(135deg, #d4af37, #f59e0b);
       color: #050c0e;
@@ -95,7 +130,6 @@
       box-shadow: 0 6px 20px rgba(212, 175, 55, 0.35);
       filter: brightness(1.05);
     }
-    /* Buttons 2 & 3: Dark Surface Cards */
     .btn-secondary {
       background: #0d1f23;
       color: #f1f5f9;
@@ -112,45 +146,101 @@
       color: #64748b;
       letter-spacing: 1px;
       text-align: center;
-      padding-top: 32px;
+      padding-top: 24px;
       text-transform: uppercase;
+      direction: ltr;
     }
   </style>
 </head>
 <body>
 
+  <!-- Top Language Bar -->
+  <div class="top-bar">
+    <button id="langBtn" class="lang-switch" type="button">
+      <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+      <span id="langText">English</span>
+    </button>
+  </div>
+
   <main class="container">
-    <!-- Brand Logo in Signature Rounded Frame -->
+    <!-- Brand Logo in Signature Frame -->
     <div class="logo-wrapper">
       <img src="../images/photo-editori-logo.webp" alt="Photo Editorii Logo" width="750" height="750">
     </div>
 
-    <!-- 1. Title -->
-    <h1>PHOTO_EDITORII | LINKS</h1>
+    <!-- Main Title -->
+    <h1>PHOTO EDITORII | LINKS</h1>
 
     <!-- 3 Action Links -->
     <div class="links-group">
-      <!-- Button 1 -->
-      <a href="../" class="btn-link btn-primary" title="Photo Editorii Main Website">
-        🌐 ENTER WEBSITE &amp; PORTFOLIO
+      <!-- Button 1: Website Link (Changes based on language) -->
+      <a id="btnWebsite" href="../" class="btn-link btn-primary" title="Photo Editorii Website">
+        <span class="icon">🌐</span>
+        <span id="txtWebsite">ورود به وب‌سایت و نمونه‌کارها</span>
       </a>
 
-      <!-- Button 2 -->
+      <!-- Button 2: Telegram Channel -->
       <a href="https://t.me/Photo_Editorii" target="_blank" rel="noopener noreferrer" class="btn-link btn-secondary" title="Photo Editorii Telegram Channel">
-        ✈️ JOIN TELEGRAM CHANNEL
+        <span class="icon">✈️</span>
+        <span id="txtTelegram">عضویت در کانال تلگرام</span>
       </a>
 
-      <!-- Button 3 -->
-      <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" class="btn-link btn-secondary" title="Direct Telegram Support and Free Feasibility Review">
-        💬 DIRECT SUPPORT &amp; FREE REVIEW
+      <!-- Button 3: Direct Support -->
+      <a href="https://t.me/Zahra_editorii" target="_blank" rel="noopener noreferrer" class="btn-link btn-secondary" title="Direct Telegram Support">
+        <span class="icon">💬</span>
+        <span id="txtSupport">پشتیبانی مستقیم و بررسی رایگان عکس</span>
       </a>
     </div>
   </main>
 
-  <!-- 5. Footer -->
+  <!-- Footer -->
   <footer>
     GITHUB_PAGES: photo-editorii/links
   </footer>
+
+  <script>
+    const translations = {
+      fa: {
+        dir: 'rtl',
+        langSwitchText: 'English',
+        websiteUrl: '../',
+        websiteText: 'ورود به وب‌سایت و نمونه‌کارها',
+        telegramText: 'عضویت در کانال تلگرام',
+        supportText: 'پشتیبانی مستقیم و بررسی رایگان عکس'
+      },
+      en: {
+        dir: 'ltr',
+        langSwitchText: 'فارسی',
+        websiteUrl: '../en/',
+        websiteText: 'ENTER WEBSITE & PORTFOLIO',
+        telegramText: 'JOIN TELEGRAM CHANNEL',
+        supportText: 'DIRECT SUPPORT & FREE REVIEW'
+      }
+    };
+
+    let currentLang = 'fa';
+
+    const langBtn = document.getElementById('langBtn');
+    const langText = document.getElementById('langText');
+    const btnWebsite = document.getElementById('btnWebsite');
+    const txtWebsite = document.getElementById('txtWebsite');
+    const txtTelegram = document.getElementById('txtTelegram');
+    const txtSupport = document.getElementById('txtSupport');
+
+    langBtn.addEventListener('click', () => {
+      currentLang = currentLang === 'fa' ? 'en' : 'fa';
+      const data = translations[currentLang];
+
+      document.documentElement.lang = currentLang;
+      document.documentElement.dir = data.dir;
+
+      langText.textContent = data.langSwitchText;
+      btnWebsite.href = data.websiteUrl;
+      txtWebsite.textContent = data.websiteText;
+      txtTelegram.textContent = data.telegramText;
+      txtSupport.textContent = data.supportText;
+    });
+  </script>
 
 </body>
 </html>
